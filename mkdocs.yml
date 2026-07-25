@@ -58,5 +58,7 @@ nav:
   - Home: index.md
   - Mathematics:
       - Overview: math/index.md
+      - Derivatives & Tangent Lines: math/derivatives.md
   - Physics:
       - Overview: physics/index.md
+      - Projectile Motion: physics/projectile_motion.md
