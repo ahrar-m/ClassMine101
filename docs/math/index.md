@@ -1,33 +1,35 @@
 # Mathematics
 
-Welcome to the **Mathematics** section on **ClassMine 101**. Explore interactive visual guides, problem walkthroughs, and Manim animation scenes organized by core topic categories:
+Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below to explore interactive visual guides, problem walkthroughs, and Manim animation scenes:
 
-## Topic Categories
+<div class="grid cards" markdown>
 
-- [**Number Systems**](number_systems/index.md)
-  - [Real Numbers & Number Systems](number_systems/real_numbers.md)
-- [**Algebra**](algebra/index.md)
-  - [Polynomials & Factorisation](algebra/polynomials.md)
-  - [Linear Equations in Two Variables](algebra/linear_equations.md)
-  - [Quadratic Equations](algebra/quadratic_equations.md)
-  - [Arithmetic Progression](algebra/arithmetic_progression.md)
-- [**Coordinate Geometry**](coordinate_geometry/index.md)
-  - [Cartesian Plane & Coordinates](coordinate_geometry/cartesian_plane.md)
-- [**Geometry**](geometry/index.md)
-  - [Euclid's Geometry](geometry/euclids_geometry.md)
-  - [Lines and Angles](geometry/lines_and_angles.md)
-  - [Triangles & Congruence](geometry/triangles.md)
-  - [Quadrilaterals & Parallelograms](geometry/quadrilaterals.md)
-  - [Circles](geometry/circles.md)
-  - [Geometrical Constructions](geometry/constructions.md)
-- [**Trigonometry**](trigonometry/index.md)
-  - [Trigonometric Ratios & Particular Angles](trigonometry/trigonometric_ratios.md)
-  - [Trigonometric Identities & Complementary Angles](trigonometry/trigonometric_identities.md)
-  - [Heights and Distances](trigonometry/heights_and_distances.md)
-- [**Mensuration**](mensuration/index.md)
-  - [Perimeter & Area of Plane Figures](mensuration/plane_figures.md)
-  - [Area of Circles, Sectors & Segments](mensuration/circles_sectors.md)
-  - [Surface Areas and Volumes of Solids](mensuration/surface_area_volume.md)
-- [**Statistics and Probability**](statistics_and_probability/index.md)
-  - [Statistics & Data Presentation](statistics_and_probability/statistics.md)
-  - [Probability](statistics_and_probability/probability.md)
+- :material-numeric: **[Number Systems](number_systems/index.md)**
+
+  Exploration of rational numbers, irrationals, real numbers, Euclid's lemma, and decimal expansions.
+
+- :material-function-variant: **[Algebra](algebra/index.md)**
+
+  Polynomials, factorisation, linear systems, quadratic equations, and arithmetic progressions.
+
+- :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)**
+
+  Cartesian plane, point plotting, distance formula, section formula, and area of triangles.
+
+- :material-shape-polygon-plus: **[Geometry](geometry/index.md)**
+
+  Euclidean geometry, lines, angles, triangles, quadrilaterals, circles, and geometric constructions.
+
+- :material-triangle-outline: **[Trigonometry](trigonometry/index.md)**
+
+  Trigonometric ratios, particular angles, identities, complementary angles, and heights & distances.
+
+- :material-cube-outline: **[Mensuration](mensuration/index.md)**
+
+  Perimeter, area of plane figures, circle sectors/segments, surface area, and volumes of solids.
+
+- :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)**
+
+  Data collection, tabular presentation, frequency graphs, central tendencies, and probability theory.
+
+</div>

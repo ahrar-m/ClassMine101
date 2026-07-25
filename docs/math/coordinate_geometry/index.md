@@ -1,7 +1,13 @@
 # Coordinate Geometry
 
-Welcome to the **Coordinate Geometry** category. Explore the topics below for visual guides and problem breakdowns:
+Welcome to the **Coordinate Geometry** category. Explore the chapters below for step-by-step breakdowns and visual guides:
 
-## Topics
+## Chapters
 
-- [**Cartesian Plane & Coordinates**](cartesian_plane.md) — Distance formula, section formula, plotting points, and area of triangles.
+<div class="grid cards" markdown>
+
+- :material-book-open-page-variant: **[Coordinate Geometry](01_coordinate_geometry.md)**
+
+  Cartesian coordinates, quadrant analysis, distance formula, section formula, and centroid of triangles.
+
+</div>

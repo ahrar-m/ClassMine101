@@ -1,7 +1,17 @@
 # Number Systems
 
-Welcome to the **Number Systems** category. Explore the topics below for visual guides and problem breakdowns:
+Welcome to the **Number Systems** category. Explore the chapters below for step-by-step breakdowns and visual guides:
 
-## Topics
+## Chapters
 
-- [**Real Numbers & Number Systems**](real_numbers.md) — Fundamental concepts of real numbers, rational/irrational numbers, Euclid's lemma, and decimal representations.
+<div class="grid cards" markdown>
+
+- :material-book-open-page-variant: **[Number Systems](01_number_systems.md)**
+
+  Concepts of real numbers, rational & irrational numbers, and representation on number lines.
+
+- :material-book-open-page-variant: **[Real Numbers](02_real_numbers.md)**
+
+  Euclid's division lemma, Fundamental Theorem of Arithmetic, irrationality proofs, and decimal representations.
+
+</div>

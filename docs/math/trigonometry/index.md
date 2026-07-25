@@ -1,9 +1,25 @@
 # Trigonometry
 
-Welcome to the **Trigonometry** category. Explore the topics below for visual guides and problem breakdowns:
+Welcome to the **Trigonometry** category. Explore the chapters below for step-by-step breakdowns and visual guides:
 
-## Topics
+## Chapters
 
-- [**Trigonometric Ratios & Particular Angles**](trigonometric_ratios.md) — Sine, cosine, tangent ratios, values at 0, 30, 45, 60, 90 degrees.
-- [**Trigonometric Identities & Complementary Angles**](trigonometric_identities.md) — Fundamental identities (sin²θ + cos²θ = 1) and complementary angle ratios.
-- [**Heights and Distances**](heights_and_distances.md) — Angles of elevation and depression, right-triangle applications, and real-world problems.
+<div class="grid cards" markdown>
+
+- :material-book-open-page-variant: **[Trigonometric Ratios & Particular Angles](01_trigonometric_ratios.md)**
+
+  Definition of sin, cos, tan, cosec, sec, cot ratios and specific angle values (0°, 30°, 45°, 60°, 90°).
+
+- :material-book-open-page-variant: **[Trigonometric Ratios of Complementary Angles](02_trigonometric_ratios_of_complementary_angles.md)**
+
+  Relationships between ratios of complementary angles in right-angled triangles.
+
+- :material-book-open-page-variant: **[Trigonometric Identities](03_trigonometric_identities.md)**
+
+  Proofs and applications of fundamental identities (sin²θ + cos²θ = 1, 1 + tan²θ = sec²θ).
+
+- :material-book-open-page-variant: **[Heights and Distances](04_heights_and_distances.md)**
+
+  Real-world applications involving angles of elevation and depression with visual right triangles.
+
+</div>
