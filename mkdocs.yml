@@ -59,5 +59,8 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Mathematics: math/index.md
+  - Mathematics:
+      - Overview: math/index.md
+      - Quadratic Equations: math/quadratic_equations.md
   - Physics: physics/index.md
+
