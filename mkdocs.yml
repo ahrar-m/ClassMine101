@@ -59,75 +59,43 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Class 9 Mathematics:
-      - Overview: class_9/index.md
+  - Mathematics:
+      - Overview: math/index.md
       - Number Systems:
-          - Overview: class_9/number_systems/index.md
-          - 1. Number Systems: class_9/number_systems/number_systems.md
+          - Overview: math/number_systems/index.md
+          - Real Numbers & Systems: math/number_systems/real_numbers.md
       - Algebra:
-          - Overview: class_9/algebra/index.md
-          - 2. Polynomials: class_9/algebra/polynomials.md
-          - 3. Factorisation of Polynomials: class_9/algebra/factorisation_of_polynomials.md
-          - 4. Linear Equations in Two Variables: class_9/algebra/linear_equations_in_two_variables.md
+          - Overview: math/algebra/index.md
+          - Polynomials & Factorisation: math/algebra/polynomials.md
+          - Linear Equations: math/algebra/linear_equations.md
+          - Quadratic Equations: math/algebra/quadratic_equations.md
+          - Arithmetic Progression: math/algebra/arithmetic_progression.md
       - Coordinate Geometry:
-          - Overview: class_9/coordinate_geometry/index.md
-          - 5. Coordinate Geometry: class_9/coordinate_geometry/coordinate_geometry.md
+          - Overview: math/coordinate_geometry/index.md
+          - Cartesian Plane & Coordinates: math/coordinate_geometry/cartesian_plane.md
       - Geometry:
-          - Overview: class_9/geometry/index.md
-          - 6. Introduction to Euclid's Geometry: class_9/geometry/introduction_to_euclids_geometry.md
-          - 7. Lines and Angles: class_9/geometry/lines_and_angles.md
-          - 8. Triangles: class_9/geometry/triangles.md
-          - 9. Congruence of Triangles and Inequalities: class_9/geometry/congruence_of_triangles_and_inequalities.md
-          - 10. Quadrilaterals: class_9/geometry/quadrilaterals.md
-          - 11. Areas of Parallelograms and Triangles: class_9/geometry/areas_of_parallelograms_and_triangles.md
-          - 12. Circles: class_9/geometry/circles.md
-          - 13. Geometrical Constructions: class_9/geometry/geometrical_constructions.md
-      - Mensuration:
-          - Overview: class_9/mensuration/index.md
-          - 14. Areas of Triangles and Quadrilaterals: class_9/mensuration/areas_of_triangles_and_quadrilaterals.md
-          - 15. Volume and Surface Area of Solids: class_9/mensuration/volume_and_surface_area_of_solids.md
-      - Statistics & Probability:
-          - Overview: class_9/statistics_and_probability/index.md
-          - 16. Presentation of Data in Tabular Form: class_9/statistics_and_probability/presentation_of_data_in_tabular_form.md
-          - 17. Bar Graph, Histogram & Frequency Polygon: class_9/statistics_and_probability/bar_graph_histogram_and_frequency_polygon.md
-          - 18. Mean, Median and Mode of Ungrouped Data: class_9/statistics_and_probability/mean_median_and_mode_of_ungrouped_data.md
-          - 19. Probability: class_9/statistics_and_probability/probability.md
-  - Class 10 Mathematics:
-      - Overview: class_10/index.md
-      - Number Systems:
-          - Overview: class_10/number_systems/index.md
-          - 1. Real Numbers: class_10/number_systems/real_numbers.md
-      - Algebra:
-          - Overview: class_10/algebra/index.md
-          - 2. Polynomials: class_10/algebra/polynomials.md
-          - 3. Linear Equations in Two Variables: class_10/algebra/linear_equations_in_two_variables.md
-          - 4. Quadratic Equations: class_10/algebra/quadratic_equations.md
-          - 5. Arithmetic Progression: class_10/algebra/arithmetic_progression.md
-      - Coordinate Geometry:
-          - Overview: class_10/coordinate_geometry/index.md
-          - 6. Coordinate Geometry: class_10/coordinate_geometry/coordinate_geometry.md
-      - Geometry:
-          - Overview: class_10/geometry/index.md
-          - 7. Triangles: class_10/geometry/triangles.md
-          - 8. Circles: class_10/geometry/circles.md
-          - 9. Constructions: class_10/geometry/constructions.md
+          - Overview: math/geometry/index.md
+          - Euclid's Geometry: math/geometry/euclids_geometry.md
+          - Lines and Angles: math/geometry/lines_and_angles.md
+          - Triangles & Congruence: math/geometry/triangles.md
+          - Quadrilaterals & Parallelograms: math/geometry/quadrilaterals.md
+          - Circles: math/geometry/circles.md
+          - Geometrical Constructions: math/geometry/constructions.md
       - Trigonometry:
-          - Overview: class_10/trigonometry/index.md
-          - 10. Trigonometric Ratios: class_10/trigonometry/trigonometric_ratios.md
-          - 11. T-Ratios of Some Particular Angles: class_10/trigonometry/t_ratios_of_some_particular_angles.md
-          - 12. Trigonometric Ratios of Complementary Angles: class_10/trigonometry/trigonometric_ratios_of_complementary_angles.md
-          - 13. Trigonometric Identities: class_10/trigonometry/trigonometric_identities.md
-          - 14. Heights and Distances: class_10/trigonometry/heights_and_distances.md
+          - Overview: math/trigonometry/index.md
+          - Trigonometric Ratios & Particular Angles: math/trigonometry/trigonometric_ratios.md
+          - Identities & Complementary Angles: math/trigonometry/trigonometric_identities.md
+          - Heights and Distances: math/trigonometry/heights_and_distances.md
       - Mensuration:
-          - Overview: class_10/mensuration/index.md
-          - 15. Perimeter and Area of Plane Figures: class_10/mensuration/perimeter_and_area_of_plane_figures.md
-          - 16. Area of Circle, Sector and Segment: class_10/mensuration/area_of_circle_sector_and_segment.md
-          - 17. Volume and Surface Areas of Solids: class_10/mensuration/volume_and_surface_areas_of_solids.md
+          - Overview: math/mensuration/index.md
+          - Perimeter & Area of Plane Figures: math/mensuration/plane_figures.md
+          - Area of Circles, Sectors & Segments: math/mensuration/circles_sectors.md
+          - Surface Area & Volume of Solids: math/mensuration/surface_area_volume.md
       - Statistics & Probability:
-          - Overview: class_10/statistics_and_probability/index.md
-          - 18. Mean, Median, Mode & Ogive: class_10/statistics_and_probability/mean_median_mode_of_grouped_data_ogive.md
-          - 19. Probability: class_10/statistics_and_probability/probability.md
-  - Math Overview: math/index.md
+          - Overview: math/statistics_and_probability/index.md
+          - Statistics & Data Presentation: math/statistics_and_probability/statistics.md
+          - Probability: math/statistics_and_probability/probability.md
   - Physics: physics/index.md
+
 
 
