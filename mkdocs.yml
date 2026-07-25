@@ -1,7 +1,10 @@
-site_name: ClassMine 101 🎓✨
+site_name: ClassMine 101
 site_description: Visual High School Math & Physics Animations using Manim
 site_author: ClassMine 101 Team
 site_url: https://ahrar-m.github.io/ClassMine101/
+
+repo_url: https://github.com/ahrar-m/ClassMine101
+repo_name: ahrar-m/ClassMine101
 
 theme:
   name: material
@@ -56,9 +59,5 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Mathematics:
-      - Overview: math/index.md
-      - Derivatives & Tangent Lines: math/derivatives.md
-  - Physics:
-      - Overview: physics/index.md
-      - Projectile Motion: physics/projectile_motion.md
+  - Mathematics: math/index.md
+  - Physics: physics/index.md
