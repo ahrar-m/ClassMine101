@@ -18,3 +18,7 @@ site/
 # IDE files
 .vscode/
 .idea/
+
+# Textbooks directory
+textbooks/
+
