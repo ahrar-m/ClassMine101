@@ -137,7 +137,7 @@
 
 .md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link {
   font-size: 0.76rem !important;
-  font-weight: 450 !important;
+  font-weight: 500 !important;
   line-height: 1.35 !important;
   padding: 0.25rem 0.5rem 0.25rem 1.1rem !important;
   border-left: 2px solid rgba(99, 102, 241, 0.2) !important;
@@ -146,16 +146,16 @@
   color: var(--md-typeset-color) !important;
   opacity: 0.85;
   border-radius: 0 4px 4px 0;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link:hover {
   opacity: 1;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: var(--cm-primary) !important;
   border-left-color: var(--cm-primary) !important;
-  padding-left: 1.25rem !important;
-  background: rgba(99, 102, 241, 0.06) !important;
+  padding-left: 1.1rem !important;
+  background: rgba(99, 102, 241, 0.08) !important;
 }
 
 .md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link--active {
@@ -164,7 +164,7 @@
   color: var(--cm-primary) !important;
   border-left-color: var(--cm-primary) !important;
   background: rgba(99, 102, 241, 0.12) !important;
-  padding-left: 1.25rem !important;
+  padding-left: 1.1rem !important;
 }
 
 /* Category Headings & Card Enhancements */
