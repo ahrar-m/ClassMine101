@@ -28,6 +28,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.tracking
     - search.suggest
@@ -45,6 +46,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - admonition
@@ -60,23 +64,23 @@ extra_javascript:
 nav:
   - Home: index.md
   - Mathematics:
-      - Overview: math/index.md
+      - math/index.md
       - Number Systems:
-          - Overview: math/number_systems/index.md
+          - math/number_systems/index.md
           - Number Systems: math/number_systems/01_number_systems.md
           - Real Numbers: math/number_systems/02_real_numbers.md
       - Algebra:
-          - Overview: math/algebra/index.md
+          - math/algebra/index.md
           - Polynomials: math/algebra/01_polynomials.md
           - Factorisation of Polynomials: math/algebra/02_factorisation_of_polynomials.md
           - Linear Equations in Two Variables: math/algebra/03_linear_equations_in_two_variables.md
           - Quadratic Equations: math/algebra/04_quadratic_equations.md
           - Arithmetic Progression: math/algebra/05_arithmetic_progression.md
       - Coordinate Geometry:
-          - Overview: math/coordinate_geometry/index.md
+          - math/coordinate_geometry/index.md
           - Coordinate Geometry: math/coordinate_geometry/01_coordinate_geometry.md
       - Geometry:
-          - Overview: math/geometry/index.md
+          - math/geometry/index.md
           - Introduction to Euclid's Geometry: math/geometry/01_euclids_geometry.md
           - Lines and Angles: math/geometry/02_lines_and_angles.md
           - Triangles & Congruence: math/geometry/03_triangles_and_congruence.md
@@ -84,23 +88,24 @@ nav:
           - Circles: math/geometry/05_circles.md
           - Geometrical Constructions: math/geometry/06_geometrical_constructions.md
       - Trigonometry:
-          - Overview: math/trigonometry/index.md
+          - math/trigonometry/index.md
           - Trigonometric Ratios & Particular Angles: math/trigonometry/01_trigonometric_ratios.md
           - Trigonometric Ratios of Complementary Angles: math/trigonometry/02_trigonometric_ratios_of_complementary_angles.md
           - Trigonometric Identities: math/trigonometry/03_trigonometric_identities.md
           - Heights and Distances: math/trigonometry/04_heights_and_distances.md
       - Mensuration:
-          - Overview: math/mensuration/index.md
+          - math/mensuration/index.md
           - Areas of Triangles & Quadrilaterals: math/mensuration/01_area_of_triangles_and_quadrilaterals.md
           - Perimeter & Area of Plane Figures: math/mensuration/02_perimeter_and_area_of_plane_figures.md
           - Area of Circle, Sector and Segment: math/mensuration/03_area_of_circle_sector_and_segment.md
           - Volume and Surface Area of Solids: math/mensuration/04_volume_and_surface_area_of_solids.md
       - Statistics & Probability:
-          - Overview: math/statistics_and_probability/index.md
+          - math/statistics_and_probability/index.md
           - Data Presentation & Frequency Graphs: math/statistics_and_probability/01_presentation_of_data_and_frequency_graphs.md
           - Mean, Median, Mode & Ogive: math/statistics_and_probability/02_mean_median_and_mode.md
           - Probability: math/statistics_and_probability/03_probability.md
   - Physics: physics/index.md
+
 
 
 

@@ -4,32 +4,60 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
 <div class="grid cards" markdown>
 
-- :material-numeric: **[Number Systems](number_systems/index.md)**
+-   :material-numeric: :material-shape-outline: __[Number Systems](number_systems/index.md)__
 
-  Exploration of rational numbers, irrationals, real numbers, Euclid's lemma, and decimal expansions.
+    ---
 
-- :material-function-variant: **[Algebra](algebra/index.md)**
+    Exploration of rational numbers, irrationals, real numbers, Euclid's lemma, and decimal expansions.
 
-  Polynomials, factorisation, linear systems, quadratic equations, and arithmetic progressions.
+    [:octicons-arrow-right-24: View Category](number_systems/index.md)
 
-- :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)**
+-   :material-function-variant: :material-shape-outline: __[Algebra](algebra/index.md)__
 
-  Cartesian plane, point plotting, distance formula, section formula, and area of triangles.
+    ---
 
-- :material-shape-polygon-plus: **[Geometry](geometry/index.md)**
+    Polynomials, factorisation, linear systems, quadratic equations, and arithmetic progressions.
 
-  Euclidean geometry, lines, angles, triangles, quadrilaterals, circles, and geometric constructions.
+    [:octicons-arrow-right-24: View Category](algebra/index.md)
 
-- :material-triangle-outline: **[Trigonometry](trigonometry/index.md)**
+-   :material-axis-arrow: :material-shape-outline: __[Coordinate Geometry](coordinate_geometry/index.md)__
 
-  Trigonometric ratios, particular angles, identities, complementary angles, and heights & distances.
+    ---
 
-- :material-cube-outline: **[Mensuration](mensuration/index.md)**
+    Cartesian plane, point plotting, distance formula, section formula, and area of triangles.
 
-  Perimeter, area of plane figures, circle sectors/segments, surface area, and volumes of solids.
+    [:octicons-arrow-right-24: View Category](coordinate_geometry/index.md)
 
-- :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)**
+-   :material-shape-polygon-plus: :material-shape-outline: __[Geometry](geometry/index.md)__
 
-  Data collection, tabular presentation, frequency graphs, central tendencies, and probability theory.
+    ---
+
+    Euclidean geometry, lines, angles, triangles, quadrilaterals, circles, and geometric constructions.
+
+    [:octicons-arrow-right-24: View Category](geometry/index.md)
+
+-   :material-triangle-outline: :material-shape-outline: __[Trigonometry](trigonometry/index.md)__
+
+    ---
+
+    Trigonometric ratios, particular angles, identities, complementary angles, and heights & distances.
+
+    [:octicons-arrow-right-24: View Category](trigonometry/index.md)
+
+-   :material-cube-outline: :material-shape-outline: __[Mensuration](mensuration/index.md)__
+
+    ---
+
+    Perimeter, area of plane figures, circle sectors/segments, surface area, and volumes of solids.
+
+    [:octicons-arrow-right-24: View Category](mensuration/index.md)
+
+-   :material-chart-bell-curve-cumulative: :material-shape-outline: __[Statistics and Probability](statistics_and_probability/index.md)__
+
+    ---
+
+    Data collection, tabular presentation, frequency graphs, central tendencies, and probability theory.
+
+    [:octicons-arrow-right-24: View Category](statistics_and_probability/index.md)
 
 </div>
