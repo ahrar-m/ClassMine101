@@ -67,7 +67,7 @@ nav:
       - math/index.md
       - Number Systems:
           - math/number_systems/index.md
-          - Number Systems: math/number_systems/01_number_systems.md
+          - Number Systems Basics: math/number_systems/01_number_systems.md
           - Real Numbers: math/number_systems/02_real_numbers.md
       - Algebra:
           - math/algebra/index.md
@@ -78,7 +78,7 @@ nav:
           - Arithmetic Progression: math/algebra/05_arithmetic_progression.md
       - Coordinate Geometry:
           - math/coordinate_geometry/index.md
-          - Coordinate Geometry: math/coordinate_geometry/01_coordinate_geometry.md
+          - Cartesian Coordinates: math/coordinate_geometry/01_coordinate_geometry.md
       - Geometry:
           - math/geometry/index.md
           - Introduction to Euclid's Geometry: math/geometry/01_euclids_geometry.md
