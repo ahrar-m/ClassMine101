@@ -149,22 +149,23 @@
   transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-.md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link:hover {
+.md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link:hover,
+.md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link--active,
+.md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link--active:hover {
   opacity: 1;
   font-weight: 500 !important;
   color: var(--cm-primary) !important;
   border-left-color: var(--cm-primary) !important;
   padding-left: 1.1rem !important;
+}
+
+.md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link:hover {
   background: rgba(99, 102, 241, 0.08) !important;
 }
 
 .md-sidebar--primary .md-nav[data-md-level="2"] .md-nav__item .md-nav__link--active {
-  opacity: 1;
-  font-weight: 600 !important;
-  color: var(--cm-primary) !important;
-  border-left-color: var(--cm-primary) !important;
-  background: rgba(99, 102, 241, 0.12) !important;
-  padding-left: 1.1rem !important;
+  background: rgba(99, 102, 241, 0.15) !important;
+  border-left-width: 3px !important;
 }
 
 /* Category Headings & Card Enhancements */
