@@ -6,11 +6,13 @@ Welcome to the **Coordinate Geometry** category. Explore the chapters below for 
 
 <div class="grid cards" markdown>
 
--   :material-book-open-page-variant: __[Coordinate Geometry](01_coordinate_geometry.md)__
+-   :material-book-open-page-variant: **[Coordinate Geometry](01_coordinate_geometry.md)**
 
     ---
 
     Cartesian coordinates, quadrant analysis, distance formula, section formula, and centroid of triangles.
+
+    *:material-clock-outline: Content coming soon*
 
     [:octicons-arrow-right-24: Open Chapter](01_coordinate_geometry.md)
 

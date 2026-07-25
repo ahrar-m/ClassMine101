@@ -1,62 +1,79 @@
 # Mathematics
 
-Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below to explore interactive visual guides, problem walkthroughs, and Manim animation scenes:
+Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below to view the chapter roadmap and upcoming topic modules:
+
+!!! info "Interactive Content & Visual Animations"
+    Detailed visual Manim animations, interactive simulations, and step-by-step problem walkthroughs for all topics are currently under active development and **coming soon**.
 
 <div class="grid cards" markdown>
 
--   :material-numeric: __[Number Systems](number_systems/index.md)__
+-   :material-numeric: **[Number Systems](number_systems/index.md)**
 
     ---
 
-    Exploration of rational numbers, irrationals, real numbers, Euclid's lemma, and decimal expansions.
+    Number Systems Basics, Real Numbers, Euclid's Lemma, & Decimal Expansions.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](number_systems/index.md)
 
--   :material-function-variant: __[Algebra](algebra/index.md)__
+-   :material-function-variant: **[Algebra](algebra/index.md)**
 
     ---
 
-    Polynomials, factorisation, linear systems, quadratic equations, and arithmetic progressions.
+    Polynomials, Factorisation, Linear Equations, Quadratic Equations, & Arithmetic Progressions.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](algebra/index.md)
 
--   :material-axis-arrow: __[Coordinate Geometry](coordinate_geometry/index.md)__
+-   :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)**
 
     ---
 
-    Cartesian plane, point plotting, distance formula, section formula, and area of triangles.
+    Cartesian Plane, Point Plotting, Distance Formula, Section Formula, & Area of Triangles.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](coordinate_geometry/index.md)
 
--   :material-shape-polygon-plus: __[Geometry](geometry/index.md)__
+-   :material-shape-polygon-plus: **[Geometry](geometry/index.md)**
 
     ---
 
-    Euclidean geometry, lines, angles, triangles, quadrilaterals, circles, and geometric constructions.
+    Euclidean Geometry, Lines & Angles, Triangles, Quadrilaterals, Circles, & Constructions.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](geometry/index.md)
 
--   :material-triangle-outline: __[Trigonometry](trigonometry/index.md)__
+-   :material-triangle-outline: **[Trigonometry](trigonometry/index.md)**
 
     ---
 
-    Trigonometric ratios, particular angles, identities, complementary angles, and heights & distances.
+    Trigonometric Ratios, Particular Angles, Identities, Complementary Angles, & Heights & Distances.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](trigonometry/index.md)
 
--   :material-cube-outline: __[Mensuration](mensuration/index.md)__
+-   :material-cube-outline: **[Mensuration](mensuration/index.md)**
 
     ---
 
-    Perimeter, area of plane figures, circle sectors/segments, surface area, and volumes of solids.
+    Areas of Triangles & Quadrilaterals, Plane Figures, Circle Sectors, & Surface Area & Volumes.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](mensuration/index.md)
 
--   :material-chart-bell-curve-cumulative: __[Statistics and Probability](statistics_and_probability/index.md)__
+-   :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)**
 
     ---
 
-    Data collection, tabular presentation, frequency graphs, central tendencies, and probability theory.
+    Data Presentation, Frequency Graphs, Mean, Median, Mode, Ogives, & Probability Theory.
+
+    *:material-clock-outline: Visual animations & walkthroughs coming soon*
 
     [:octicons-arrow-right-24: View Category](statistics_and_probability/index.md)
 
