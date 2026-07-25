@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap');
+
+:root {
+  --md-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --md-font-code: 'Fira Code', monospace;
+  
+  --cm-primary: #6366f1;
+  --cm-primary-hover: #4f46e5;
+  --cm-secondary: #06b6d4;
+  --cm-accent: #f43f5e;
+  --cm-bg-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+}
+
+/* Hero Banner Styling */
+.cm-hero {
+  background: var(--cm-bg-gradient);
+  color: #ffffff;
+  padding: 3.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.3);
+}
+
+.cm-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.025em;
+}
+
+.cm-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 650px;
+  margin: 0 auto 1.75rem auto;
+  line-height: 1.6;
+}
+
+.cm-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.cm-btn-primary {
+  background-color: #ffffff;
+  color: #4f46e5 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cm-btn-primary:hover {
+  transform: translateY(-2px);
+  background-color: #f8fafc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cm-btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cm-btn-secondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Topic Card Grid */
+.cm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.cm-card {
+  background: var(--md-card-background, #ffffff);
+  border: 1px solid var(--md-default-foreground--lightest, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.cm-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--cm-primary);
+  box-shadow: 0 12px 24px -10px rgba(99, 102, 241, 0.25);
+}
+
+.cm-card-badge {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--cm-primary);
+  margin-bottom: 0.75rem;
+}
+
+.cm-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--md-typeset-color);
+}
+
+.cm-card-desc {
+  font-size: 0.95rem;
+  color: var(--md-default-foreground--secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.cm-card-link {
+  font-weight: 600;
+  color: var(--cm-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none !important;
+}
+
+.cm-card-link:hover {
+  color: var(--cm-primary-hover);
+}
+
+/* Custom Admonitions / Callouts */
+.md-typeset .admonition.formula,
+.md-typeset details.formula {
+  border-color: #06b6d4;
+}
+
+.md-typeset .formula > .admonition-title,
+.md-typeset .formula > summary {
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+.md-typeset .formula > .admonition-title::before,
+.md-typeset .formula > summary::before {
+  background-color: #06b6d4;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>') no-repeat center;
+}
