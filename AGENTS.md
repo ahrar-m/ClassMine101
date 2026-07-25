@@ -1,5 +1,27 @@
 # Agent Instructions & Project Rules
 
+## Framework & Technology Stack
+- **Documentation Engine**: [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
+- **Math & Science Visualizations**: [Manim (Mathematical Animation Engine)](https://www.manim.community/) for Python video/GIF rendering.
+- **TeX Math Rendering**: MathJax 3 (configured via `docs/javascripts/mathjax.js` and MathJax CDN).
+- **Styling**: Modern, responsive design system in `docs/stylesheets/extra.css` using CSS custom properties, HSL color tokens, Inter font, Fira Code font, and Material grid cards.
+
+## Directory & Architecture Structure
+- `docs/`: Core documentation and website markdown source pages.
+  - `index.md`: Main landing page with hero banner, subject modules grid cards, and overview.
+  - `math/`: Pure topic-based mathematics content.
+    - `index.md`: Mathematics hub overview page featuring interactive category cards.
+    - `<category_dir>/`: Category folders (`number_systems/`, `algebra/`, `coordinate_geometry/`, `geometry/`, `trigonometry/`, `mensuration/`, `statistics_and_probability/`).
+      - `index.md`: Category overview listing chapters.
+      - `01_<topic>.md`, `02_<topic>.md`: Sequential chapter pages (ordered numerically on filesystem, clean titles in UI).
+  - `physics/`: Physics hub and topic pages.
+  - `stylesheets/extra.css`: Site-wide theme overrides, custom hero styling, card grids, typography, and navigation styles.
+  - `javascripts/mathjax.js`: MathJax setup for inline `\(...\)` and block `\[...\]` LaTeX rendering.
+- `animations/`: Python source scripts for Manim animation scenes.
+- `textbooks/`: Reference textbook materials and resources.
+- `mkdocs.yml`: Master configuration file for site metadata, navigation hierarchy (`nav`), theme palette, plugins, and extensions.
+- `requirements.txt`: Python dependencies (`mkdocs`, `mkdocs-material`, `manim`).
+
 ## Local Build & Preview
 - After every single execution/prompt, compile the website locally (`mkdocs build`).
 - Prepare a localhost preview link (e.g. `http://127.0.0.1:8000` or `http://localhost:8000`) and present it directly so the user can click and open it to analyze locally.
@@ -16,3 +38,4 @@
   - **Category Overview Pages**: Use heading `## Chapters` and display interactive visual cards (`<div class="grid cards" markdown>`) instead of plain bullet points.
   - **Chapter Pages**: Use heading `## Topics` listing the topics/lessons (or placeholders for upcoming Manim animations).
 - **Placeholder Content**: For pages or sections that are not yet populated with Manim animations or full guides, explicitly mention that content is coming soon.
+

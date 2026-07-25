@@ -4,7 +4,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
 <div class="grid cards" markdown>
 
--   :material-numeric: :material-shape-outline: __[Number Systems](number_systems/index.md)__
+-   :material-numeric: __[Number Systems](number_systems/index.md)__
 
     ---
 
@@ -12,7 +12,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](number_systems/index.md)
 
--   :material-function-variant: :material-shape-outline: __[Algebra](algebra/index.md)__
+-   :material-function-variant: __[Algebra](algebra/index.md)__
 
     ---
 
@@ -20,7 +20,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](algebra/index.md)
 
--   :material-axis-arrow: :material-shape-outline: __[Coordinate Geometry](coordinate_geometry/index.md)__
+-   :material-axis-arrow: __[Coordinate Geometry](coordinate_geometry/index.md)__
 
     ---
 
@@ -28,7 +28,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](coordinate_geometry/index.md)
 
--   :material-shape-polygon-plus: :material-shape-outline: __[Geometry](geometry/index.md)__
+-   :material-shape-polygon-plus: __[Geometry](geometry/index.md)__
 
     ---
 
@@ -36,7 +36,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](geometry/index.md)
 
--   :material-triangle-outline: :material-shape-outline: __[Trigonometry](trigonometry/index.md)__
+-   :material-triangle-outline: __[Trigonometry](trigonometry/index.md)__
 
     ---
 
@@ -44,7 +44,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](trigonometry/index.md)
 
--   :material-cube-outline: :material-shape-outline: __[Mensuration](mensuration/index.md)__
+-   :material-cube-outline: __[Mensuration](mensuration/index.md)__
 
     ---
 
@@ -52,7 +52,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](mensuration/index.md)
 
--   :material-chart-bell-curve-cumulative: :material-shape-outline: __[Statistics and Probability](statistics_and_probability/index.md)__
+-   :material-chart-bell-curve-cumulative: __[Statistics and Probability](statistics_and_probability/index.md)__
 
     ---
 

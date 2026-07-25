@@ -9,21 +9,32 @@
 
 <div class="cm-about-section">
   <h2>Subject Modules</h2>
-  <div class="grid cards" markdown>
-  - :material-math-compass: **[Mathematics](math/)**
-    
-    Comprehensive visual modules covering Number Systems, Algebra, Coordinate Geometry, Geometry, Trigonometry, Mensuration, and Statistics & Probability.
 
-  - :material-atom: **[Physics](physics/)**
-    
-    Interactive physical simulations, kinematics, dynamics, and visual walkthroughs.
+  <div class="grid cards" markdown>
+
+  -   :material-math-compass: __[Mathematics](math/)__
+
+      ---
+
+      Comprehensive visual modules covering Number Systems, Algebra, Coordinate Geometry, Geometry, Trigonometry, Mensuration, and Statistics & Probability.
+
+      [:octicons-arrow-right-24: Explore Mathematics](math/)
+
+  -   :material-atom: __[Physics](physics/)__
+
+      ---
+
+      Interactive physical simulations, kinematics, dynamics, and visual walkthroughs.
+
+      [:octicons-arrow-right-24: Explore Physics](physics/)
+
   </div>
 </div>
 
 <div class="cm-about-section">
   <h2>Why ClassMine 101?</h2>
   <p class="cm-about-text">
-    Understanding abstract concepts shouldn't rely solely on static formulas. ClassMine 101 combines mathematical rigor with geometric and physical intuition powered by Manim scenes, step-by-step problem breakdowns, and visual video explanations.
+    Learning math and physics shouldn't be about just memorizing formulas. ClassMine 101 brings key concepts to life step-by-step using clear visual animations, geometric intuition, and interactive problem walkthroughs.
   </p>
 </div>
 
