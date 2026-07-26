@@ -1,6 +1,8 @@
 # Trigonometry
 
-Welcome to the **Trigonometry** category. Explore the chapters below for step-by-step breakdowns and visual guides:
+Welcome to the **Trigonometry** hub. This section combines complete theory, derivations, solved examples, and practice sets from both **NCERT** and **RS Aggarwal** textbooks.
+
+Explore the chapters below:
 
 ## Chapters
 
@@ -10,7 +12,9 @@ Welcome to the **Trigonometry** category. Explore the chapters below for step-by
 
     ---
 
-    Definition of sin, cos, tan, cosec, sec, cot ratios and specific angle values (0°, 30°, 45°, 60°, 90°).
+    Comprehensive coverage of the 6 trigonometric ratios, right-triangle geometry, reciprocal/quotient relations, and values at specific angles ($0^\circ, 30^\circ, 45^\circ, 60^\circ, 90^\circ$).
+
+    **NCERT**: Chapter 8 (Ex 8.1, 8.2) | **RS Aggarwal**: Chapter 10 & 11
 
     *:material-clock-outline: Content coming soon*
 
@@ -20,7 +24,9 @@ Welcome to the **Trigonometry** category. Explore the chapters below for step-by
 
     ---
 
-    Relationships between ratios of complementary angles in right-angled triangles.
+    Relationships between ratios of complementary angles $\sin(90^\circ - \theta) = \cos \theta$, geometric derivations, and algebraic simplifications.
+
+    **NCERT**: Chapter 8 (Ex 8.3) | **RS Aggarwal**: Chapter 12
 
     *:material-clock-outline: Content coming soon*
 
@@ -30,7 +36,9 @@ Welcome to the **Trigonometry** category. Explore the chapters below for step-by
 
     ---
 
-    Proofs and applications of fundamental identities (sin²θ + cos²θ = 1, 1 + tan²θ = sec²θ).
+    Geometric proofs and algebraic applications of fundamental identities ($\sin^2 \theta + \cos^2 \theta = 1$, $1 + \tan^2 \theta = \sec^2 \theta$, $1 + \cot^2 \theta = \csc^2 \theta$).
+
+    **NCERT**: Chapter 8 (Ex 8.4) | **RS Aggarwal**: Chapter 13
 
     *:material-clock-outline: Content coming soon*
 
@@ -40,7 +48,9 @@ Welcome to the **Trigonometry** category. Explore the chapters below for step-by
 
     ---
 
-    Real-world applications involving angles of elevation and depression with visual right triangles.
+    Real-world applications involving line of sight, angle of elevation, angle of depression, and multi-triangle geometric setups.
+
+    **NCERT**: Chapter 9 (Ex 9.1) | **RS Aggarwal**: Chapter 14
 
     *:material-clock-outline: Content coming soon*
 

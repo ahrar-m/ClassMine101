@@ -1,10 +1,52 @@
 # Heights and Distances
 
-!!! info "Trigonometry"
-    Real-world applications involving angles of elevation and depression with visual right triangles.
+!!! info "Chapter Overview (NCERT Ch 9 / RS Aggarwal Ch 14)"
+    Applications of trigonometry to real-world geometric scenarios involving line of sight, angle of elevation, angle of depression, and single/multi-triangle setups.
 
 ---
 
 ## Topics
 
-*Topics, visual Manim animation scenes, and solved walkthroughs for this chapter are coming soon.*
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **Line of Sight, Angle of Elevation & Angle of Depression**
+
+    ---
+
+    Definitions, observer frame of reference, horizontal line, and visual angle representations.
+
+    *:material-clock-outline: Coming soon*
+
+-   :material-triangle-right-angle-math: **Single Right-Triangle Real-World Problems**
+
+    ---
+
+    Calculating heights of trees, towers, buildings, and length of shadows given one angle and one distance.
+
+    *:material-clock-outline: Coming soon*
+
+-   :material-vector-polyline: **Double Right-Triangle Real-World Problems**
+
+    ---
+
+    Solving scenarios with two right triangles (e.g. moving observer, top and bottom of a tower/building, balloons, ships).
+
+    *:material-clock-outline: Coming soon*
+
+-   :material-book-open-outline: **NCERT Walkthroughs (Chapter 9 Ex 9.1)**
+
+    ---
+
+    Step-by-step solutions for NCERT Chapter 9 problems.
+
+    *:material-clock-outline: Coming soon*
+
+-   :material-notebook-edit-outline: **RS Aggarwal High-Yield Practice Problems**
+
+    ---
+
+    Exhaustive practice set covering RS Aggarwal Chapter 14 heights and distances problems.
+
+    *:material-clock-outline: Coming soon*
+
+</div>
