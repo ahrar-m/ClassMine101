@@ -1,82 +1,15 @@
 # Mathematics
 
-Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below to view the chapter roadmap and upcoming topic modules:
+Welcome to the **Mathematics** hub on **ClassMine 101**.
 
-!!! info "Interactive Content & Visual Animations"
-    Detailed visual Manim animations, interactive simulations, and step-by-step problem walkthroughs for all topics are currently under active development and **coming soon**.
+!!! info "Content Under Active Development"
+    Comprehensive visual topic guides, step-by-step problem breakdowns, and **Manim** animations are currently being created from scratch and will be published here module by module.
 
-## Coming Soon
+---
 
-<div class="grid cards cm-coming-soon-grid" markdown>
-
--   :material-numeric: **[Number Systems](number_systems/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Number Systems Basics, Real Numbers, Euclid's Lemma, & Decimal Expansions.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](number_systems/index.md)
-
--   :material-function-variant: **[Algebra](algebra/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Polynomials, Factorisation, Linear Equations, Quadratic Equations, & Arithmetic Progressions.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](algebra/index.md)
-
--   :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Cartesian Plane, Point Plotting, Distance Formula, Section Formula, & Area of Triangles.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](coordinate_geometry/index.md)
-
--   :material-shape-polygon-plus: **[Geometry](geometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Euclidean Geometry, Lines & Angles, Triangles, Quadrilaterals, Circles, & Constructions.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](geometry/index.md)
-
--   :material-triangle-outline: **[Trigonometry](trigonometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Trigonometric Ratios, Particular Angles, Identities, Complementary Angles, & Heights & Distances.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](trigonometry/index.md)
-
--   :material-cube-outline: **[Mensuration](mensuration/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Areas of Triangles & Quadrilaterals, Plane Figures, Circle Sectors, & Surface Area & Volumes.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](mensuration/index.md)
-
--   :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Data Presentation, Frequency Graphs, Mean, Median, Mode, Ogives, & Probability Theory.
-
-    *:material-clock-outline: Visual animations & walkthroughs coming soon*
-
-    [:octicons-arrow-right-24: View Category](statistics_and_probability/index.md)
-
+<div class="cm-about-section">
+  <h2>Upcoming Mathematical Categories</h2>
+  <p class="cm-about-text">
+    Content for Number Systems, Algebra, Coordinate Geometry, Geometry, Trigonometry, Mensuration, and Statistics & Probability will be added here with full mathematical rigor and interactive visual explanations.
+  </p>
 </div>
