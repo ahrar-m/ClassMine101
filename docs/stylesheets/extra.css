@@ -263,4 +263,114 @@ html {
   display: none !important;
 }
 
+/* Interactive Quiz Component Styling */
+.cm-quiz-container {
+  background: var(--md-code-bg-color);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 14px;
+  padding: 1.75rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.08);
+}
+
+.cm-quiz-header h3 {
+  margin-top: 0 !important;
+  color: var(--cm-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cm-quiz-header h3 svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: var(--cm-primary);
+}
+
+.cm-quiz-card {
+  background: var(--md-bg-color);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.cm-quiz-question {
+  font-size: 1rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.5;
+}
+
+.cm-quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cm-quiz-opt {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--md-typeset-color);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cm-quiz-opt:hover:not(:disabled) {
+  background: var(--cm-primary);
+  color: #ffffff;
+  border-color: var(--cm-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.cm-quiz-opt.correct {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+}
+
+.cm-quiz-opt.incorrect {
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+}
+
+.cm-quiz-feedback {
+  display: none;
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.cm-quiz-feedback.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.cm-quiz-feedback.correct-box {
+  background: rgba(16, 185, 129, 0.12);
+  border-left: 4px solid #10b981;
+  color: var(--md-typeset-color);
+}
+
+.cm-quiz-feedback.incorrect-box {
+  background: rgba(239, 68, 68, 0.12);
+  border-left: 4px solid #ef4444;
+  color: var(--md-typeset-color);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
 

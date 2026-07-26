@@ -66,9 +66,8 @@ extra:
 
 nav:
   - Home: index.md
-  - Mathematics: math/index.md
-
-
-
-
-
+  - Mathematics:
+      - Overview: math/index.md
+      - Trigonometry:
+          - Overview: math/trigonometry/index.md
+          - Trigonometric Ratios: math/trigonometry/01_trigonometric_ratios.md

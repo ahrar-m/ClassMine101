@@ -1,15 +1,28 @@
-# Mathematics
+# Mathematics Hub
 
-Welcome to the **Mathematics** hub on **ClassMine 101**.
+Welcome to the **Mathematics** learning hub on **ClassMine 101**. Select a category below to explore topic guides, interactive visual walkthroughs, and concept quizzes.
 
-!!! info "Content Under Active Development"
-    Comprehensive topic guides, step-by-step problem breakdowns, visual diagrams, and interactive concept quizzes are currently being created from scratch and will be published here module by module.
+---
+
+## Categories
+
+<div class="grid cards" markdown>
+
+-   :material-angle-acute: **Trigonometry**
+
+    ---
+
+    Understand right triangle geometry, fundamental trigonometric ratios ($\sin, \cos, \tan, \csc, \sec, \cot$), identities, and practical applications.
+
+    [:octicons-arrow-right-24: Explore Trigonometry](trigonometry/index.md)
+
+</div>
 
 ---
 
 <div class="cm-about-section">
   <h2>Upcoming Mathematical Categories</h2>
   <p class="cm-about-text">
-    Content for Number Systems, Algebra, Coordinate Geometry, Geometry, Trigonometry, Mensuration, and Statistics & Probability will be added here with full mathematical rigor, visual illustrations, and practice quizzes.
+    Comprehensive modules for <strong>Number Systems</strong>, <strong>Algebra</strong>, <strong>Coordinate Geometry</strong>, <strong>Geometry</strong>, <strong>Mensuration</strong>, and <strong>Statistics & Probability</strong> are under active development and will be published step-by-step.
   </p>
 </div>
