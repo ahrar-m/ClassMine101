@@ -44,225 +44,324 @@ In a right-angled triangle, one angle measures exactly $90^\circ$. We classify t
 
 ---
 
-### Guided Interactive Discovery: Parts of a Right Triangle
-
-Explore the parts of a right triangle step-by-step without relying on vertex names:
-
 <div class="cm-discovery-module" id="discovery-module">
-  <!-- Step Tracker Header -->
-  <div class="cm-step-tracker">
-    <div class="cm-step-badge active" id="step-badge-1">
-      <span class="step-num">1</span>
-      <span class="step-text">Find 90° & Hypotenuse</span>
-    </div>
-    <div class="cm-step-divider"></div>
-    <div class="cm-step-badge" id="step-badge-2">
-      <span class="step-num">2</span>
-      <span class="step-text">Pick Reference Angle (θ)</span>
-    </div>
-    <div class="cm-step-divider"></div>
-    <div class="cm-step-badge" id="step-badge-3">
-      <span class="step-num">3</span>
-      <span class="step-text">Identify Opposite & Adjacent</span>
-    </div>
-  </div>
-
-  <!-- Instruction Banner -->
-  <div class="cm-discovery-prompt" id="discovery-prompt">
-    <strong>Step 1:</strong> Click on the <span class="highlight-target">90° corner square</span> or the <span class="highlight-target">slanted side opposite to it</span> to locate the Hypotenuse.
-  </div>
 
   <!-- Interactive SVG Triangle Canvas -->
   <div class="cm-triangle-svg-container">
-    <svg class="cm-triangle-svg" viewBox="0 0 440 280" width="440" height="280">
-      <!-- Triangle Path fill -->
-      <polygon points="60,230 360,230 360,40" fill="rgba(99, 102, 241, 0.05)" stroke="none" />
+    <svg class="cm-triangle-svg" viewBox="0 0 440 260" width="440" height="260">
+      <!-- Triangle Fill -->
+      <polygon points="60,210 360,210 360,40" fill="rgba(99, 102, 241, 0.04)" stroke="none" />
       
-      <!-- Right angle marker at corner (360, 230) -->
-      <path id="svg-90-marker" class="cm-svg-clickable" d="M 335,230 L 335,205 L 360,205" fill="rgba(99, 102, 241, 0.1)" stroke="#64748b" stroke-width="2.5" onclick="handleDiscoveryClick('right-angle')" />
-      <text id="lbl-90-deg" x="312" y="222" font-size="13" font-weight="700" fill="#64748b">90°</text>
+      <!-- 90 Deg Marker -->
+      <path id="svg-90-marker" d="M 335,210 L 335,185 L 360,185" fill="none" stroke="#94a3b8" stroke-width="2.5" />
+      <text id="lbl-90-deg" x="312" y="202" class="cm-svg-label" font-size="13" font-weight="700" fill="#94a3b8" style="opacity: 0; display: none;">90°</text>
 
-      <!-- Reference Angle Arc (Bottom Left angle: 60, 230) -->
-      <path id="svg-ref-arc" class="cm-svg-clickable" d="M 105,230 A 45,45 0 0 0 98,206" fill="none" stroke="#94a3b8" stroke-width="4" onclick="handleDiscoveryClick('ref-angle')" />
-      <text id="lbl-ref-theta" x="112" y="218" font-size="16" font-weight="800" fill="#94a3b8" style="display:none;">θ</text>
+      <!-- Bottom-Left Angle Arc (Theta) -->
+      <path id="svg-arc-theta" d="M 95,210 A 35,35 0 0 0 88,190" fill="none" stroke="#94a3b8" stroke-width="3" />
+      <text id="lbl-theta" x="100" y="200" class="cm-svg-label" font-size="15" font-weight="800" fill="#6366f1" style="opacity: 0; display: none;">θ</text>
       
-      <!-- Side 1: Bottom Side -->
-      <line id="line-bottom" class="cm-svg-line cm-svg-clickable" x1="60" y1="230" x2="360" y2="230" stroke="#94a3b8" stroke-width="5" onclick="handleDiscoveryClick('side-bottom')" />
+      <!-- Top-Right Angle Arc (Phi) -->
+      <path id="svg-arc-phi" d="M 360,75 A 35,35 0 0 1 342,62" fill="none" stroke="#94a3b8" stroke-width="3" />
+      <text id="lbl-phi" x="340" y="85" class="cm-svg-label" font-size="15" font-weight="800" fill="#06b6d4" style="opacity: 0; display: none;">φ</text>
+
+      <!-- Triangle Side Visible Lines -->
+      <line id="line-bottom" class="cm-svg-line" x1="60" y1="210" x2="360" y2="210" stroke="#94a3b8" stroke-width="4.5" />
+      <line id="line-vertical" class="cm-svg-line" x1="360" y1="210" x2="360" y2="40" stroke="#94a3b8" stroke-width="4.5" />
+      <line id="line-hypotenuse" class="cm-svg-line" x1="60" y1="210" x2="360" y2="40" stroke="#94a3b8" stroke-width="4.5" />
       
-      <!-- Side 2: Vertical Side -->
-      <line id="line-vertical" class="cm-svg-line cm-svg-clickable" x1="360" y1="230" x2="360" y2="40" stroke="#94a3b8" stroke-width="5" onclick="handleDiscoveryClick('side-vertical')" />
+      <!-- Vertex Points -->
+      <circle cx="60" cy="210" r="5" fill="#64748b" />
+      <circle cx="360" cy="210" r="5" fill="#64748b" />
+      <circle cx="360" cy="40" r="5" fill="#64748b" />
+
+      <!-- Thick Invisible Hitboxes for Easy Mouse/Touch Interaction -->
+      <line class="cm-hitbox" x1="60" y1="210" x2="360" y2="40" stroke="transparent" stroke-width="28" onclick="handleTriangleClick('hypotenuse')" onmouseenter="highlightHover('hypotenuse', true)" onmouseleave="highlightHover('hypotenuse', false)" />
+      <line class="cm-hitbox" x1="360" y1="210" x2="360" y2="40" stroke="transparent" stroke-width="28" onclick="handleTriangleClick('vertical')" onmouseenter="highlightHover('vertical', true)" onmouseleave="highlightHover('vertical', false)" />
+      <line class="cm-hitbox" x1="60" y1="210" x2="360" y2="210" stroke="transparent" stroke-width="28" onclick="handleTriangleClick('bottom')" onmouseenter="highlightHover('bottom', true)" onmouseleave="highlightHover('bottom', false)" />
       
-      <!-- Side 3: Slanted Side (Hypotenuse) -->
-      <line id="line-hypotenuse" class="cm-svg-line cm-svg-clickable" x1="60" y1="230" x2="360" y2="40" stroke="#94a3b8" stroke-width="5" onclick="handleDiscoveryClick('hypotenuse')" />
-      
-      <!-- Vertices (Unlabeled) -->
-      <circle cx="60" cy="230" r="6" fill="#6366f1" />
-      <circle cx="360" cy="230" r="6" fill="#64748b" />
-      <circle cx="360" cy="40" r="6" fill="#6366f1" />
-      
-      <!-- Dynamic SVG Text Labels -->
-      <text id="lbl-hypotenuse" x="170" y="120" class="cm-svg-text" font-weight="700" fill="#8b5cf6" transform="rotate(-32.3, 185, 125)" style="opacity: 0.2;">Hypotenuse (Longest Side)</text>
-      <text id="lbl-adjacent" x="175" y="255" class="cm-svg-text" font-weight="700" fill="#10b981" style="opacity: 0.2;">Adjacent Side</text>
-      <text id="lbl-opposite" x="370" y="140" class="cm-svg-text" font-weight="700" fill="#ef4444" style="opacity: 0.2;">Opposite Side</text>
+      <circle class="cm-hitbox" cx="360" cy="210" r="32" fill="transparent" onclick="handleTriangleClick('right-angle')" />
+      <circle class="cm-hitbox" cx="60" cy="210" r="32" fill="transparent" onclick="handleTriangleClick('angle-theta')" />
+      <circle class="cm-hitbox" cx="360" cy="40" r="32" fill="transparent" onclick="handleTriangleClick('angle-phi')" />
+
+      <!-- Dynamic SVG Labels (Invisible until discovered) -->
+      <text id="lbl-hypotenuse-text" x="160" y="110" class="cm-svg-label" font-weight="700" font-size="14" fill="#8b5cf6" transform="rotate(-29.5, 175, 115)" style="opacity: 0; display: none;">Hypotenuse (Longest Side)</text>
+      <text id="lbl-bottom-text" x="175" y="235" class="cm-svg-label" font-weight="700" font-size="14" fill="#64748b" style="opacity: 0; display: none;">Base Side</text>
+      <text id="lbl-vertical-text" x="372" y="130" class="cm-svg-label" font-weight="700" font-size="14" fill="#64748b" style="opacity: 0; display: none;">Vertical Side</text>
     </svg>
   </div>
 
-  <!-- Interactive Feedback & Explanation Box -->
-  <div class="cm-discovery-feedback" id="discovery-feedback">
-    Click on the 90° corner square or the slanted hypotenuse side to begin!
+  <!-- Prompt Banner -->
+  <div class="cm-prompt-box" id="discovery-prompt">
+    <strong>Step 1:</strong> Click on the <span class="highlight-target">90° right angle corner</span> or the <span class="highlight-target">slanted side</span> to locate the Hypotenuse.
   </div>
 
-  <!-- Control Actions -->
+  <!-- Feedback & Instructions Box -->
+  <div class="cm-discovery-feedback" id="discovery-feedback">
+    Click on the 90° corner square symbol or the slanted side on the triangle to begin!
+  </div>
+
+  <!-- Step 2: Parallel Two-Column Reference Angle Choice (Hidden until Step 1 complete) -->
+  <div class="cm-angle-columns" id="angle-columns" style="display: none;">
+    <div class="cm-angle-column" id="col-theta">
+      <h4>Reference Angle: Bottom-Left (θ)</h4>
+      <p class="cm-col-desc">Select this angle to see side roles relative to Angle θ:</p>
+      <button class="cm-discovery-btn cm-btn-column" id="btn-select-theta" onclick="selectReferenceAngle('theta')">Select Angle θ</button>
+      <div class="cm-col-results" id="res-theta" style="display: none;">
+        <p class="cm-step-action">Next, click the side directly across from Angle θ to mark <strong>Opposite</strong>.</p>
+        <button class="cm-discovery-btn cm-btn-sub" id="btn-opp-theta" onclick="confirmOpposite('theta')">Mark Opposite Side →</button>
+        <ul class="cm-role-list" id="list-theta" style="display: none;">
+          <li><strong style="color:#ef4444;">Opposite:</strong> Vertical Side</li>
+          <li><strong style="color:#10b981;">Adjacent:</strong> Bottom Side</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cm-angle-column" id="col-phi">
+      <h4>Reference Angle: Top-Right (φ)</h4>
+      <p class="cm-col-desc">Select this angle to see side roles relative to Angle φ:</p>
+      <button class="cm-discovery-btn cm-btn-column" id="btn-select-phi" onclick="selectReferenceAngle('phi')">Select Angle φ</button>
+      <div class="cm-col-results" id="res-phi" style="display: none;">
+        <p class="cm-step-action">Next, click the side directly across from Angle φ to mark <strong>Opposite</strong>.</p>
+        <button class="cm-discovery-btn cm-btn-sub" id="btn-opp-phi" onclick="confirmOpposite('phi')">Mark Opposite Side →</button>
+        <ul class="cm-role-list" id="list-phi" style="display: none;">
+          <li><strong style="color:#ef4444;">Opposite:</strong> Bottom Side</li>
+          <li><strong style="color:#10b981;">Adjacent:</strong> Vertical Side</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
   <div class="cm-discovery-actions">
-    <button class="cm-discovery-btn cm-btn-secondary" id="btn-reset-discovery" onclick="resetDiscoveryModule()">Reset Explorer</button>
-    <button class="cm-discovery-btn cm-btn-primary" id="btn-next-step" onclick="advanceDiscoveryStep()" disabled>Next Step →</button>
+    <button class="cm-discovery-btn cm-btn-secondary" onclick="resetExplorer()">Reset Explorer</button>
   </div>
 </div>
 
 <script>
-let currentStep = 1;
-let stepCompleted = [false, false, false];
+let isHypotenuseDiscovered = false;
+let selectedAngle = null; // 'theta' or 'phi'
 
-function handleDiscoveryClick(target) {
-  const feedback = document.getElementById('discovery-feedback');
-  const nextBtn = document.getElementById('btn-next-step');
+function highlightHover(side, isHover) {
+  if (!isHover) {
+    if (!isHypotenuseDiscovered && side === 'hypotenuse') {
+      document.getElementById('line-hypotenuse').setAttribute('stroke', '#94a3b8');
+      document.getElementById('line-hypotenuse').setAttribute('stroke-width', '4.5');
+    }
+    return;
+  }
+  const el = document.getElementById(side === 'hypotenuse' ? 'line-hypotenuse' : (side === 'vertical' ? 'line-vertical' : 'line-bottom'));
+  if (el) {
+    el.setAttribute('stroke-width', '6.5');
+  }
+}
 
-  if (currentStep === 1) {
+function handleTriangleClick(target) {
+  if (!isHypotenuseDiscovered) {
     if (target === 'right-angle' || target === 'hypotenuse') {
-      document.getElementById('line-hypotenuse').setAttribute('stroke', '#8b5cf6');
-      document.getElementById('line-hypotenuse').setAttribute('stroke-width', '7');
+      isHypotenuseDiscovered = true;
+      
+      // Highlight Hypotenuse
+      const lineHyp = document.getElementById('line-hypotenuse');
+      lineHyp.setAttribute('stroke', '#8b5cf6');
+      lineHyp.setAttribute('stroke-width', '6.5');
+      
       document.getElementById('svg-90-marker').setAttribute('stroke', '#8b5cf6');
-      document.getElementById('svg-90-marker').setAttribute('fill', 'rgba(139, 92, 246, 0.15)');
-      document.getElementById('lbl-90-deg').setAttribute('fill', '#8b5cf6');
-      document.getElementById('lbl-hypotenuse').style.opacity = '1';
+      const lbl90 = document.getElementById('lbl-90-deg');
+      lbl90.style.display = 'block';
+      lbl90.style.opacity = '1';
+      lbl90.setAttribute('fill', '#8b5cf6');
 
-      feedback.className = 'cm-discovery-feedback success-box';
-      feedback.innerHTML = '<strong>Spot on!</strong> The side directly opposite the 90° right angle is always the <strong>Hypotenuse</strong>. It is the longest side of a right triangle.';
-      
-      stepCompleted[0] = true;
-      nextBtn.disabled = false;
-      document.getElementById('step-badge-1').classList.add('completed');
-    } else {
-      feedback.className = 'cm-discovery-feedback info-box';
-      feedback.innerHTML = '<em>Hint:</em> Look for the side directly across from the 90° corner square symbol.';
-    }
-  } else if (currentStep === 2) {
-    if (target === 'ref-angle' || target === 'side-bottom') {
-      document.getElementById('svg-ref-arc').setAttribute('stroke', '#6366f1');
-      document.getElementById('svg-ref-arc').setAttribute('stroke-width', '5');
-      document.getElementById('lbl-ref-theta').style.display = 'block';
-      document.getElementById('lbl-ref-theta').setAttribute('fill', '#6366f1');
+      const lblHyp = document.getElementById('lbl-hypotenuse-text');
+      lblHyp.style.display = 'block';
+      lblHyp.style.opacity = '1';
 
+      const prompt = document.getElementById('discovery-prompt');
+      prompt.innerHTML = '<strong>Step 2:</strong> Hypotenuse identified! Now select a <strong>Reference Angle</strong> below to discover Opposite & Adjacent sides.';
+
+      const feedback = document.getElementById('discovery-feedback');
       feedback.className = 'cm-discovery-feedback success-box';
-      feedback.innerHTML = '<strong>Reference Angle (θ) Selected!</strong> Choosing an acute reference angle allows us to determine which of the remaining two sides is <strong>Opposite</strong> and which is <strong>Adjacent</strong>.';
-      
-      stepCompleted[1] = true;
-      nextBtn.disabled = false;
-      document.getElementById('step-badge-2').classList.add('completed');
+      feedback.innerHTML = '<strong>Hypotenuse Discovered!</strong> The side opposite the 90° right angle is the <strong>Hypotenuse</strong> (the longest side). Now pick an acute reference angle below to compare side roles!';
+
+      document.getElementById('angle-columns').style.display = 'flex';
     } else {
+      const feedback = document.getElementById('discovery-feedback');
       feedback.className = 'cm-discovery-feedback info-box';
-      feedback.innerHTML = '<em>Hint:</em> Click on the angle arc at the bottom-left vertex to choose it as your Reference Angle (θ).';
+      feedback.innerHTML = '<em>Hint:</em> Click on the 90° corner square or the slanted side directly opposite to it.';
     }
-  } else if (currentStep === 3) {
-    if (target === 'side-vertical') {
-      feedback.className = 'cm-discovery-feedback success-box';
-      feedback.innerHTML = '<strong>Opposite Side:</strong> This side is directly across from Reference Angle θ (it does not touch angle θ).';
-    } else if (target === 'side-bottom') {
-      feedback.className = 'cm-discovery-feedback success-box';
-      feedback.innerHTML = '<strong>Adjacent Side:</strong> This side lies next to Reference Angle θ (it forms angle θ along with the Hypotenuse).';
-    } else if (target === 'hypotenuse') {
-      feedback.className = 'cm-discovery-feedback info-box';
-      feedback.innerHTML = '<strong>Hypotenuse:</strong> The longest side opposite the 90° right angle.';
+  } else {
+    // If user clicks sides in Step 2
+    if (selectedAngle === 'theta') {
+      if (target === 'vertical') {
+        confirmOpposite('theta');
+      } else if (target === 'bottom') {
+        const feedback = document.getElementById('discovery-feedback');
+        feedback.className = 'cm-discovery-feedback info-box';
+        feedback.innerHTML = '<em>Hint:</em> For Angle θ (bottom-left), the <strong>Opposite</strong> side is directly across from it (the Vertical side).';
+      }
+    } else if (selectedAngle === 'phi') {
+      if (target === 'bottom') {
+        confirmOpposite('phi');
+      } else if (target === 'vertical') {
+        const feedback = document.getElementById('discovery-feedback');
+        feedback.className = 'cm-discovery-feedback info-box';
+        feedback.innerHTML = '<em>Hint:</em> For Angle φ (top-right), the <strong>Opposite</strong> side is directly across from it (the Bottom side).';
+      }
     }
   }
 }
 
-function advanceDiscoveryStep() {
-  if (currentStep === 1 && stepCompleted[0]) {
-    currentStep = 2;
-    updateDiscoveryUI();
-  } else if (currentStep === 2 && stepCompleted[1]) {
-    currentStep = 3;
-    stepCompleted[2] = true;
-    updateDiscoveryUI();
+function selectReferenceAngle(angle) {
+  if (!isHypotenuseDiscovered) return;
+
+  selectedAngle = angle;
+  const colTheta = document.getElementById('col-theta');
+  const colPhi = document.getElementById('col-phi');
+
+  const arcTheta = document.getElementById('svg-arc-theta');
+  const arcPhi = document.getElementById('svg-arc-phi');
+  const lblTheta = document.getElementById('lbl-theta');
+  const lblPhi = document.getElementById('lbl-phi');
+
+  const resTheta = document.getElementById('res-theta');
+  const resPhi = document.getElementById('res-phi');
+
+  if (angle === 'theta') {
+    colTheta.classList.add('active');
+    colPhi.classList.remove('active');
+
+    arcTheta.setAttribute('stroke', '#6366f1');
+    arcTheta.setAttribute('stroke-width', '4.5');
+    lblTheta.style.display = 'block';
+    lblTheta.style.opacity = '1';
+
+    arcPhi.setAttribute('stroke', '#94a3b8');
+    arcPhi.setAttribute('stroke-width', '3');
+
+    resTheta.style.display = 'block';
+    resPhi.style.display = 'none';
+
+    // Clear previous side highlights except hypotenuse
+    document.getElementById('line-vertical').setAttribute('stroke', '#94a3b8');
+    document.getElementById('line-bottom').setAttribute('stroke', '#94a3b8');
+
+    const feedback = document.getElementById('discovery-feedback');
+    feedback.className = 'cm-discovery-feedback info-box';
+    feedback.innerHTML = 'Reference Angle <strong>θ (Bottom-Left)</strong> chosen. Click on the side directly across from Angle θ (or click the button) to mark the <strong>Opposite Side</strong>.';
+  } else {
+    colPhi.classList.add('active');
+    colTheta.classList.remove('active');
+
+    arcPhi.setAttribute('stroke', '#06b6d4');
+    arcPhi.setAttribute('stroke-width', '4.5');
+    lblPhi.style.display = 'block';
+    lblPhi.style.opacity = '1';
+
+    arcTheta.setAttribute('stroke', '#94a3b8');
+    arcTheta.setAttribute('stroke-width', '3');
+
+    resPhi.style.display = 'block';
+    resTheta.style.display = 'none';
+
+    // Clear previous side highlights except hypotenuse
+    document.getElementById('line-vertical').setAttribute('stroke', '#94a3b8');
+    document.getElementById('line-bottom').setAttribute('stroke', '#94a3b8');
+
+    const feedback = document.getElementById('discovery-feedback');
+    feedback.className = 'cm-discovery-feedback info-box';
+    feedback.innerHTML = 'Reference Angle <strong>φ (Top-Right)</strong> chosen. Click on the side directly across from Angle φ (or click the button) to mark the <strong>Opposite Side</strong>.';
   }
 }
 
-function updateDiscoveryUI() {
-  const prompt = document.getElementById('discovery-prompt');
-  const feedback = document.getElementById('discovery-feedback');
-  const nextBtn = document.getElementById('btn-next-step');
+function confirmOpposite(angle) {
+  const lineVert = document.getElementById('line-vertical');
+  const lineBot = document.getElementById('line-bottom');
+  const lblVert = document.getElementById('lbl-vertical-text');
+  const lblBot = document.getElementById('lbl-bottom-text');
 
-  document.getElementById('step-badge-1').classList.remove('active');
-  document.getElementById('step-badge-2').classList.remove('active');
-  document.getElementById('step-badge-3').classList.remove('active');
-  document.getElementById(`step-badge-${currentStep}`).classList.add('active');
+  lblVert.style.display = 'block';
+  lblVert.style.opacity = '1';
+  lblBot.style.display = 'block';
+  lblBot.style.opacity = '1';
 
-  if (currentStep === 2) {
-    prompt.innerHTML = '<strong>Step 2:</strong> Click on the <span class="highlight-target">bottom-left angle arc</span> to mark your Reference Angle (θ).';
-    feedback.className = 'cm-discovery-feedback';
-    feedback.innerHTML = 'Select the reference angle arc (θ) on the triangle!';
-    nextBtn.disabled = !stepCompleted[1];
-  } else if (currentStep === 3) {
-    prompt.innerHTML = '<strong>Step 3:</strong> Discover how the remaining sides are classified as <strong>Opposite</strong> and <strong>Adjacent</strong> relative to θ!';
+  if (angle === 'theta') {
+    lineVert.setAttribute('stroke', '#ef4444');
+    lineVert.setAttribute('stroke-width', '6');
+    lblVert.innerText = 'Opposite (to θ)';
+    lblVert.setAttribute('fill', '#ef4444');
+
+    lineBot.setAttribute('stroke', '#10b981');
+    lineBot.setAttribute('stroke-width', '6');
+    lblBot.innerText = 'Adjacent (to θ)';
+    lblBot.setAttribute('fill', '#10b981');
+
+    document.getElementById('list-theta').style.display = 'block';
+    document.getElementById('btn-opp-theta').style.display = 'none';
+
+    const feedback = document.getElementById('discovery-feedback');
     feedback.className = 'cm-discovery-feedback success-box';
-    feedback.innerHTML = '<strong>Complete Triangle Anatomy Discovered!</strong><br/>' +
-      '<span style="color:#8b5cf6;">• Hypotenuse:</span> Longest side, opposite 90°.<br/>' +
-      '<span style="color:#ef4444;">• Opposite Side:</span> Directly across from Reference Angle θ.<br/>' +
-      '<span style="color:#10b981;">• Adjacent Side:</span> Next to Reference Angle θ.<br/>' +
-      '<em>Click on any side of the triangle above to inspect its definition.</em>';
+    feedback.innerHTML = '<strong>Side Classification Complete for Angle θ!</strong><br/>' +
+      '• <span style="color:#ef4444; font-weight:700;">Opposite Side:</span> Vertical side (directly across from θ).<br/>' +
+      '• <span style="color:#10b981; font-weight:700;">Adjacent Side:</span> Bottom side (next to θ).<br/>' +
+      '<em>Try selecting Angle φ in the right column to compare how Opposite and Adjacent swap roles!</em>';
+  } else {
+    lineBot.setAttribute('stroke', '#ef4444');
+    lineBot.setAttribute('stroke-width', '6');
+    lblBot.innerText = 'Opposite (to φ)';
+    lblBot.setAttribute('fill', '#ef4444');
 
-    // Highlight all sides in their respective colors
-    document.getElementById('line-vertical').setAttribute('stroke', '#ef4444');
-    document.getElementById('line-vertical').setAttribute('stroke-width', '6');
-    document.getElementById('lbl-opposite').style.opacity = '1';
+    lineVert.setAttribute('stroke', '#10b981');
+    lineVert.setAttribute('stroke-width', '6');
+    lblVert.innerText = 'Adjacent (to φ)';
+    lblVert.setAttribute('fill', '#10b981');
 
-    document.getElementById('line-bottom').setAttribute('stroke', '#10b981');
-    document.getElementById('line-bottom').setAttribute('stroke-width', '6');
-    document.getElementById('lbl-adjacent').style.opacity = '1';
+    document.getElementById('list-phi').style.display = 'block';
+    document.getElementById('btn-opp-phi').style.display = 'none';
 
-    nextBtn.innerText = 'Completed ✓';
-    nextBtn.disabled = true;
-    document.getElementById('step-badge-3').classList.add('completed');
+    const feedback = document.getElementById('discovery-feedback');
+    feedback.className = 'cm-discovery-feedback success-box';
+    feedback.innerHTML = '<strong>Side Classification Complete for Angle φ!</strong><br/>' +
+      '• <span style="color:#ef4444; font-weight:700;">Opposite Side:</span> Bottom side (directly across from φ).<br/>' +
+      '• <span style="color:#10b981; font-weight:700;">Adjacent Side:</span> Vertical side (next to φ).<br/>' +
+      '<em>Try selecting Angle θ in the left column to compare how Opposite and Adjacent swap roles!</em>';
   }
 }
 
-function resetDiscoveryModule() {
-  currentStep = 1;
-  stepCompleted = [false, false, false];
-
-  document.getElementById('step-badge-1').className = 'cm-step-badge active';
-  document.getElementById('step-badge-2').className = 'cm-step-badge';
-  document.getElementById('step-badge-3').className = 'cm-step-badge';
+function resetExplorer() {
+  isHypotenuseDiscovered = false;
+  selectedAngle = null;
 
   document.getElementById('line-hypotenuse').setAttribute('stroke', '#94a3b8');
-  document.getElementById('line-hypotenuse').setAttribute('stroke-width', '5');
+  document.getElementById('line-hypotenuse').setAttribute('stroke-width', '4.5');
   document.getElementById('line-vertical').setAttribute('stroke', '#94a3b8');
-  document.getElementById('line-vertical').setAttribute('stroke-width', '5');
+  document.getElementById('line-vertical').setAttribute('stroke-width', '4.5');
   document.getElementById('line-bottom').setAttribute('stroke', '#94a3b8');
-  document.getElementById('line-bottom').setAttribute('stroke-width', '5');
+  document.getElementById('line-bottom').setAttribute('stroke-width', '4.5');
 
-  document.getElementById('svg-90-marker').setAttribute('stroke', '#64748b');
-  document.getElementById('svg-90-marker').setAttribute('fill', 'rgba(99, 102, 241, 0.1)');
-  document.getElementById('lbl-90-deg').setAttribute('fill', '#64748b');
+  document.getElementById('svg-90-marker').setAttribute('stroke', '#94a3b8');
+  document.getElementById('svg-arc-theta').setAttribute('stroke', '#94a3b8');
+  document.getElementById('svg-arc-phi').setAttribute('stroke', '#94a3b8');
 
-  document.getElementById('svg-ref-arc').setAttribute('stroke', '#94a3b8');
-  document.getElementById('svg-ref-arc').setAttribute('stroke-width', '4');
-  document.getElementById('lbl-ref-theta').style.display = 'none';
+  ['lbl-90-deg', 'lbl-theta', 'lbl-phi', 'lbl-hypotenuse-text', 'lbl-bottom-text', 'lbl-vertical-text'].forEach(id => {
+    const el = document.getElementById(id);
+    el.style.opacity = '0';
+    el.style.display = 'none';
+  });
 
-  document.getElementById('lbl-hypotenuse').style.opacity = '0.2';
-  document.getElementById('lbl-opposite').style.opacity = '0.2';
-  document.getElementById('lbl-adjacent').style.opacity = '0.2';
+  document.getElementById('angle-columns').style.display = 'none';
+  document.getElementById('col-theta').classList.remove('active');
+  document.getElementById('col-phi').classList.remove('active');
+  document.getElementById('res-theta').style.display = 'none';
+  document.getElementById('res-phi').style.display = 'none';
+  document.getElementById('list-theta').style.display = 'none';
+  document.getElementById('list-phi').style.display = 'none';
+  document.getElementById('btn-opp-theta').style.display = 'inline-block';
+  document.getElementById('btn-opp-phi').style.display = 'inline-block';
 
-  document.getElementById('discovery-prompt').innerHTML = '<strong>Step 1:</strong> Click on the <span class="highlight-target">90° corner square</span> or the <span class="highlight-target">slanted side opposite to it</span> to locate the Hypotenuse.';
-  
+  document.getElementById('discovery-prompt').innerHTML = '<strong>Step 1:</strong> Click on the <span class="highlight-target">90° right angle corner</span> or the <span class="highlight-target">slanted side</span> to locate the Hypotenuse.';
   const feedback = document.getElementById('discovery-feedback');
   feedback.className = 'cm-discovery-feedback';
-  feedback.innerHTML = 'Click on the 90° corner square or the slanted hypotenuse side to begin!';
-
-  const nextBtn = document.getElementById('btn-next-step');
-  nextBtn.innerText = 'Next Step →';
-  nextBtn.disabled = true;
+  feedback.innerHTML = 'Click on the 90° corner square symbol or the slanted side on the triangle to begin!';
 }
 </script>
+
 
