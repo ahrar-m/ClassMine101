@@ -1,6 +1,6 @@
 # Trigonometric Ratios
 
-Welcome to the **Trigonometric Ratios** chapter. Here we explore the fundamental relationships between the acute angles and side lengths of right-angled triangles.
+Welcome to the **Trigonometric Ratios** chapter. Here we explore the basic relationships between the angles and side lengths of a right-angled triangle.
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to the **Trigonometric Ratios** chapter. Here we explore the fundamental
 
     ---
 
-    Understand what trigonometry is, its etymological roots, and how to identify the Hypotenuse, Opposite, and Adjacent sides of a right triangle.
+    Discover real-life examples, what the word trigonometry means, and how to identify the Hypotenuse, Opposite, and Adjacent sides of a right triangle.
 
     [:octicons-arrow-right-24: Read Guide](#introduction-right-triangle-geometry)
 
@@ -22,85 +22,96 @@ Welcome to the **Trigonometric Ratios** chapter. Here we explore the fundamental
 
 ## Introduction & Right Triangle Geometry
 
-### What is Trigonometry?
+### Real-Life Examples: Why Do We Need Trigonometry?
 
-The word **Trigonometry** is derived from three Greek root words:
+Imagine these real-world situations:
 
-* **Trigonon** ($\tau\rho\acute{\iota}\gamma\omega\nu o\nu$) – meaning **"Triangle"**
-* **Metron** ($\mu\acute{\epsilon}\tau\rho o\nu$) – meaning **"Measure"**
+1. **Standing near a tall tower (like Qutub Minar)**: Imagine you are standing on the ground looking up at the top of the Qutub Minar. A right-angled triangle is formed between your feet, the base of the tower, and the top of the tower. Can you find the height of the tower without actually climbing up to measure it?
+2. **Looking across a river**: Imagine a girl sitting on the balcony of a house on a riverbank, looking down at a flower pot on the opposite bank. If you know the height of the balcony, can you find the width of the river?
 
-Together, **Trigonometry** literally translates to **"the measurement of triangles"**. 
-
-In modern mathematics, trigonometry is the branch that investigates the precise quantitative relationships between the **side lengths** and **angles** of triangles. While it originated in astronomy and navigation to calculate distances to stars and across oceans, today it forms the foundation of physics, engineering, computer graphics, architecture, and signal processing.
+In both situations, we can easily find the missing heights or distances without measuring them physically! The branch of mathematics that makes this possible is called **Trigonometry**.
 
 ---
 
-### The Anatomy of a Right-Angled Triangle
+### Where Does the Word Come From?
 
-Trigonometric ratios are initially defined using a **right-angled triangle**—a triangle in which one interior angle measures exactly $90^\circ$.
+The word **Trigonometry** comes from three simple Greek words:
 
-Consider a right-angled triangle $\triangle ABC$, where the right angle is located at vertex $B$ ($\angle B = 90^\circ$).
+* **tri** — meaning **"three"**
+* **gon** — meaning **"sides"**
+* **metron** — meaning **"measure"**
+
+Putting them together, **trigonometry simply means "measuring the sides and angles of a triangle"**.
+
+---
+
+### Parts of a Right-Angled Triangle
+
+Trigonometry begins with a **right-angled triangle** (a triangle where one angle is $90^\circ$). 
+
+Consider a right-angled triangle $\triangle ABC$, where the right angle is at vertex $B$ ($\angle B = 90^\circ$). We name the three sides based on a chosen acute angle called the **Reference Angle**:
 
 ```
        C
        |\
        | \
        |  \  Hypotenuse
-Opposite |   \  (c)
-  (a)  |    \
+Opposite |   \  (AC)
+ (BC)  |    \
        |_____\
-       B  (b)  A
-       [90°]  (θ = Reference Angle)
+       B (AB)  A
+      [90°]  (Reference Angle)
      Adjacent
 ```
 
-In any right-angled triangle, we classify the three sides into three distinct roles based on a chosen acute angle called the **Reference Angle** ($\theta$):
-
-#### 1. Hypotenuse
-* **Definition**: The side lying directly opposite to the $90^\circ$ right angle.
-* **Key Property**: It is always the **longest side** of the right triangle.
-* **Fixed Nature**: The hypotenuse never changes regardless of which acute angle you select as your reference angle.
-
-#### 2. Opposite Side (Perpendicular)
-* **Definition**: The side situated directly across from the chosen reference angle $\theta$.
-* **Key Property**: It does not touch the vertex of reference angle $\theta$.
-
-#### 3. Adjacent Side (Base)
-* **Definition**: The side located next to the reference angle $\theta$.
-* **Key Property**: Together with the hypotenuse, it forms the reference angle $\theta$.
+1. **Hypotenuse**: The longest side of the triangle, located directly opposite the $90^\circ$ right angle. It **never changes** regardless of which acute angle you pick.
+2. **Opposite Side**: The side directly across from your chosen reference angle.
+3. **Adjacent Side**: The side next to your chosen reference angle (the side that forms the angle along with the hypotenuse).
 
 ---
 
-### Critical Concept: The Choice of Reference Angle Matters!
+### Interactive Visual Tool: Switch the Reference Angle
 
-A common mistake is assuming that the vertical side is always "opposite" and the horizontal side is always "adjacent". **Opposite and Adjacent sides depend entirely on which angle you choose as your reference.**
+**Crucial Rule**: Swapping your reference angle swaps which side is **Opposite** and which side is **Adjacent**! 
 
-Let's observe how side designations change in $\triangle ABC$ (right-angled at $B$):
+Try clicking the buttons below to see how the side roles change in $\triangle ABC$ (right angle at $B$):
 
-| Reference Angle | Hypotenuse | Opposite Side | Adjacent Side |
-| :--- | :--- | :--- | :--- |
-| **Angle $A$ ($\theta = \angle A$)** | Side $AC$ | Side $BC$ | Side $AB$ |
-| **Angle $C$ ($\phi = \angle C$)** | Side $AC$ | Side $AB$ | Side $BC$ |
+<div class="cm-angle-switcher">
+  <div class="cm-switcher-buttons">
+    <button id="btn-angle-A" class="cm-switch-btn active" onclick="switchAngle('A')">Reference Angle: Angle A (θ)</button>
+    <button id="btn-angle-C" class="cm-switch-btn" onclick="switchAngle('C')">Reference Angle: Angle C (ϕ)</button>
+  </div>
 
-!!! tip "Key Takeaway"
-    - The **Hypotenuse** is always fixed (opposite the $90^\circ$ angle).
-    - Swapping the reference angle from $\angle A$ to $\angle C$ **swaps the Opposite and Adjacent sides**!
+  <div class="cm-switcher-display" id="angle-display-box">
+    <div class="cm-angle-card">
+      <h4 id="display-title">Active Reference Angle: Angle A</h4>
+      <ul class="cm-side-list">
+        <li><strong class="tag-hyp">Hypotenuse:</strong> Side <span id="side-hyp">AC</span> (opposite the 90° right angle at B)</li>
+        <li><strong class="tag-opp">Opposite Side:</strong> Side <span id="side-opp">BC</span> (directly across from Angle A)</li>
+        <li><strong class="tag-adj">Adjacent Side:</strong> Side <span id="side-adj">AB</span> (next to Angle A)</li>
+      </ul>
+      <p class="cm-switcher-tip" id="switcher-tip">
+        Notice that side <strong>BC</strong> is across from Angle A, so it is the Opposite side!
+      </p>
+    </div>
+  </div>
+</div>
 
 ---
 
-### Interactive Concept Quiz: Test Your Understanding
+### Self-Assessment Quiz: Test Your Understanding
 
-Use the visual triangle below to test your understanding of hypotenuse, opposite, and adjacent sides!
+Test what you have learned about triangle sides using right triangle $\triangle PQR$ (where $\angle Q = 90^\circ$):
 
 <div class="cm-quiz-container">
   <div class="cm-quiz-header">
-    <h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 22g-2 0-3.5-1.5T2 17V7g0-2 1.5-1.5T7 2h10g2 0 3.5 1.5T24 7v10g0 2-1.5 1.5T20 22H9zm3-4h2v-2h-2v2zm1-4q.825 0 1.413-.587Q15 12.825 15 12t-.587-1.413Q13.825 10 13 10t-1.413.587Q11 11.175 11 12t.587 1.413Q12.175 14 13 14z"/></svg></span> Quick Self-Assessment Quiz</h3>
-    <p>Target Triangle: $\triangle PQR$ with right angle at $Q$ ($\angle Q = 90^\circ$).</p>
+    <h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 22g-2 0-3.5-1.5T2 17V7g0-2 1.5-1.5T7 2h10g2 0 3.5 1.5T24 7v10g0 2-1.5 1.5T20 22H9zm3-4h2v-2h-2v2zm1-4q.825 0 1.413-.587Q15 12.825 15 12t-.587-1.413Q13.825 10 13 10t-1.413.587Q11 11.175 11 12t.587 1.413Q12.175 14 13 14z"/></svg></span> Quick Concept Check</h3>
+    <p>Triangle setup: Right-angled triangle $\triangle PQR$ with right angle at vertex $Q$ ($\angle Q = 90^\circ$).</p>
   </div>
 
   <div class="cm-quiz-card">
     <div class="cm-quiz-question">
-      <strong>Question 1:</strong> In right-angled triangle $\triangle PQR$ ($\angle Q = 90^\circ$), which side is the <strong>Hypotenuse</strong>?
+      <strong>Question 1:</strong> Which side is the <strong>Hypotenuse</strong> in $\triangle PQR$?
     </div>
     <div class="cm-quiz-options" id="q1-options">
       <button class="cm-quiz-opt" onclick="checkAnswer(1, 'PQ', false)">Side PQ</button>
@@ -112,7 +123,7 @@ Use the visual triangle below to test your understanding of hypotenuse, opposite
 
   <div class="cm-quiz-card">
     <div class="cm-quiz-question">
-      <strong>Question 2:</strong> If we choose <strong>$\angle P$</strong> as our reference angle, which side is the <strong>Opposite Side</strong>?
+      <strong>Question 2:</strong> If your reference angle is <strong>Angle P</strong>, which side is the <strong>Opposite Side</strong>?
     </div>
     <div class="cm-quiz-options" id="q2-options">
       <button class="cm-quiz-opt" onclick="checkAnswer(2, 'PQ', false)">Side PQ</button>
@@ -124,7 +135,7 @@ Use the visual triangle below to test your understanding of hypotenuse, opposite
 
   <div class="cm-quiz-card">
     <div class="cm-quiz-question">
-      <strong>Question 3:</strong> If we choose <strong>$\angle R$</strong> as our reference angle, which side is the <strong>Adjacent Side</strong>?
+      <strong>Question 3:</strong> If you switch your reference angle to <strong>Angle R</strong>, which side is now the <strong>Adjacent Side</strong>?
     </div>
     <div class="cm-quiz-options" id="q3-options">
       <button class="cm-quiz-opt" onclick="checkAnswer(3, 'PQ', false)">Side PQ</button>
@@ -136,6 +147,34 @@ Use the visual triangle below to test your understanding of hypotenuse, opposite
 </div>
 
 <script>
+function switchAngle(angle) {
+  const btnA = document.getElementById('btn-angle-A');
+  const btnC = document.getElementById('btn-angle-C');
+  const title = document.getElementById('display-title');
+  const hyp = document.getElementById('side-hyp');
+  const opp = document.getElementById('side-opp');
+  const adj = document.getElementById('side-adj');
+  const tip = document.getElementById('switcher-tip');
+
+  if (angle === 'A') {
+    btnA.classList.add('active');
+    btnC.classList.remove('active');
+    title.innerText = 'Active Reference Angle: Angle A';
+    hyp.innerText = 'AC';
+    opp.innerText = 'BC';
+    adj.innerText = 'AB';
+    tip.innerHTML = 'For Angle A: Side <strong>BC</strong> is across (Opposite) and side <strong>AB</strong> is next to it (Adjacent).';
+  } else {
+    btnC.classList.add('active');
+    btnA.classList.remove('active');
+    title.innerText = 'Active Reference Angle: Angle C';
+    hyp.innerText = 'AC';
+    opp.innerText = 'AB';
+    adj.innerText = 'BC';
+    tip.innerHTML = 'For Angle C: Side <strong>AB</strong> is across (Opposite) and side <strong>BC</strong> is next to it (Adjacent). Notice how Opposite and Adjacent swapped!';
+  }
+}
+
 function checkAnswer(questionNum, selectedOpt, isCorrect) {
   const feedbackEl = document.getElementById(`q${questionNum}-feedback`);
   const optionsEl = document.getElementById(`q${questionNum}-options`);
@@ -155,25 +194,21 @@ function checkAnswer(questionNum, selectedOpt, isCorrect) {
   if (isCorrect) {
     feedbackEl.className = 'cm-quiz-feedback show correct-box';
     if (questionNum === 1) {
-      feedbackEl.innerHTML = '<strong>Correct!</strong> Side <em>PR</em> lies directly opposite to the $90^\\circ$ angle at $Q$, making it the hypotenuse.';
+      feedbackEl.innerHTML = '<strong>Correct!</strong> Side <em>PR</em> is opposite the 90° right angle at Q, so it is the hypotenuse.';
     } else if (questionNum === 2) {
-      feedbackEl.innerHTML = '<strong>Correct!</strong> For reference angle $\\angle P$, side <em>QR</em> is directly opposite across the triangle.';
+      feedbackEl.innerHTML = '<strong>Correct!</strong> Side <em>QR</em> is directly across from Angle P, making it the opposite side.';
     } else if (questionNum === 3) {
-      feedbackEl.innerHTML = '<strong>Correct!</strong> For reference angle $\\angle R$, side <em>QR</em> is adjacent to angle $R$ (forming angle $R$ alongside hypotenuse $PR$).';
+      feedbackEl.innerHTML = '<strong>Correct!</strong> For Angle R, side <em>QR</em> touches Angle R (along with hypotenuse PR), so it is the adjacent side.';
     }
   } else {
     feedbackEl.className = 'cm-quiz-feedback show incorrect-box';
     if (questionNum === 1) {
-      feedbackEl.innerHTML = '<strong>Incorrect.</strong> Remember: The Hypotenuse is always the side opposite the $90^\\circ$ right angle ($\angle Q$). That side is <em>PR</em>.';
+      feedbackEl.innerHTML = '<strong>Incorrect.</strong> The Hypotenuse is always the side opposite the 90° right angle (Angle Q). That side is <em>PR</em>.';
     } else if (questionNum === 2) {
-      feedbackEl.innerHTML = '<strong>Incorrect.</strong> The Opposite side is the side directly across from reference angle $\\angle P$, which is side <em>QR</em>.';
+      feedbackEl.innerHTML = '<strong>Incorrect.</strong> The Opposite side is directly across from reference Angle P, which is side <em>QR</em>.';
     } else if (questionNum === 3) {
-      feedbackEl.innerHTML = '<strong>Incorrect.</strong> For angle $\\angle R$, side <em>PQ</em> is opposite, <em>PR</em> is hypotenuse, and <em>QR</em> is the adjacent side.';
+      feedbackEl.innerHTML = '<strong>Incorrect.</strong> For Angle R, side <em>PQ</em> is opposite and <em>QR</em> is the adjacent side.';
     }
-  }
-  
-  if (window.MathJax) {
-    window.MathJax.typesetPromise([feedbackEl]);
   }
 }
 </script>
