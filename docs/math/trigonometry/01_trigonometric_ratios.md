@@ -16,24 +16,6 @@ Welcome to the **Trigonometric Ratios** chapter. Here we explore the fundamental
 
     [:octicons-arrow-right-24: Read Guide](#introduction-right-triangle-geometry)
 
--   :material-numeric-6-box-multiple-outline: **The 6 Trigonometric Ratios** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Definitions of Sine, Cosine, Tangent, Cosecant, Secant, and Cotangent along with reciprocal and quotient identities.
-
--   :material-angle-acute: **Ratios of Specific Angles** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Derivations and values for standard angles: $0^\circ, 30^\circ, 45^\circ, 60^\circ,$ and $90^\circ$.
-
--   :material-math-compass: **Ratios of Complementary Angles** <span class="cm-badge-coming-soon">Coming Soon</span>
-
-    ---
-
-    Relationships between trigonometric ratios of complementary angles ($\theta$ and $90^\circ - \theta$).
-
 </div>
 
 ---

@@ -20,11 +20,4 @@ Trigonometry connects geometry and algebra by defining fundamental numerical rel
 
 </div>
 
----
 
-<div class="cm-about-section">
-  <h2>Upcoming Chapters</h2>
-  <p class="cm-about-text">
-    Additional chapters including <strong>Trigonometric Identities</strong> and <strong>Heights & Distances</strong> are currently under development and will be published soon.
-  </p>
-</div>
