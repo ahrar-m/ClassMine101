@@ -1,6 +1,6 @@
 # Trigonometric Ratios & Particular Angles
 
-!!! info "Chapter Overview (NCERT Ch 8 / RS Aggarwal Ch 10 & 11)"
+!!! info "Chapter Overview"
     Complete theoretical foundation, geometric definitions, reciprocal & quotient identities, scale-independence proofs, and evaluation of trigonometric ratios for acute angles ($0^\circ, 30^\circ, 45^\circ, 60^\circ, 90^\circ$).
 
 ---
@@ -57,19 +57,19 @@
 
     *:material-clock-outline: Coming soon*
 
--   :material-book-open-outline: **NCERT Walkthroughs (Ex 8.1 & Ex 8.2)**
+-   :material-book-open-outline: **Core Concept Walkthroughs**
 
     ---
 
-    Step-by-step solutions and explanations for all NCERT textbook problems.
+    Step-by-step solutions and conceptual walkthroughs for standard topic problems.
 
     *:material-clock-outline: Coming soon*
 
--   :material-notebook-edit-outline: **RS Aggarwal High-Yield Practice Problems**
+-   :material-notebook-edit-outline: **High-Yield Practice Problems**
 
     ---
 
-    Exhaustive practice set covering RS Aggarwal Chapter 10 & 11 problem types.
+    Exhaustive practice set covering foundational and advanced problem types.
 
     *:material-clock-outline: Coming soon*
 

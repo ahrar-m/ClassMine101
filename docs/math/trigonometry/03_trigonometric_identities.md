@@ -1,6 +1,6 @@
 # Trigonometric Identities
 
-!!! info "Chapter Overview (NCERT Ch 8 / RS Aggarwal Ch 13)"
+!!! info "Chapter Overview"
     Proofs and applications of fundamental trigonometric identities ($\sin^2 \theta + \cos^2 \theta = 1$, $1 + \tan^2 \theta = \sec^2 \theta$, $1 + \cot^2 \theta = \csc^2 \theta$), algebraic manipulations, and identity verification strategies.
 
 ---
@@ -33,19 +33,19 @@
 
     *:material-clock-outline: Coming soon*
 
--   :material-book-open-outline: **NCERT Walkthroughs (Ex 8.4)**
+-   :material-book-open-outline: **Core Concept Walkthroughs**
 
     ---
 
-    Complete solutions for NCERT Exercise 8.4 including all sub-parts of Question 5.
+    Complete solutions and conceptual walkthroughs for standard identity problems.
 
     *:material-clock-outline: Coming soon*
 
--   :material-notebook-edit-outline: **RS Aggarwal High-Yield Practice Problems**
+-   :material-notebook-edit-outline: **High-Yield Practice Problems**
 
     ---
 
-    Exhaustive practice set covering RS Aggarwal Chapter 13 identity proofs and conditional identities.
+    Exhaustive practice set covering identity proofs and conditional identities.
 
     *:material-clock-outline: Coming soon*
 

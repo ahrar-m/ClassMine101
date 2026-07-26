@@ -1,6 +1,6 @@
 # Heights and Distances
 
-!!! info "Chapter Overview (NCERT Ch 9 / RS Aggarwal Ch 14)"
+!!! info "Chapter Overview"
     Applications of trigonometry to real-world geometric scenarios involving line of sight, angle of elevation, angle of depression, and single/multi-triangle setups.
 
 ---
@@ -33,19 +33,19 @@
 
     *:material-clock-outline: Coming soon*
 
--   :material-book-open-outline: **NCERT Walkthroughs (Chapter 9 Ex 9.1)**
+-   :material-book-open-outline: **Core Concept Walkthroughs**
 
     ---
 
-    Step-by-step solutions for NCERT Chapter 9 problems.
+    Step-by-step solutions and conceptual walkthroughs for heights and distances problems.
 
     *:material-clock-outline: Coming soon*
 
--   :material-notebook-edit-outline: **RS Aggarwal High-Yield Practice Problems**
+-   :material-notebook-edit-outline: **High-Yield Practice Problems**
 
     ---
 
-    Exhaustive practice set covering RS Aggarwal Chapter 14 heights and distances problems.
+    Exhaustive practice set covering real-world heights and distances problems.
 
     *:material-clock-outline: Coming soon*
 

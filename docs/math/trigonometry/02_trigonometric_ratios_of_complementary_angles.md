@@ -1,6 +1,6 @@
 # Trigonometric Ratios of Complementary Angles
 
-!!! info "Chapter Overview (NCERT Ch 8 / RS Aggarwal Ch 12)"
+!!! info "Chapter Overview"
     Detailed study of trigonometric ratios for complementary angles ($\theta$ and $90^\circ - \theta$), geometric derivations, algebraic evaluation, and simplification techniques.
 
 ---
@@ -33,19 +33,19 @@
 
     *:material-clock-outline: Coming soon*
 
--   :material-book-open-outline: **NCERT Walkthroughs (Ex 8.3)**
+-   :material-book-open-outline: **Core Concept Walkthroughs**
 
     ---
 
-    Step-by-step solutions for NCERT Exercise 8.3 questions.
+    Step-by-step solutions and conceptual walkthroughs for complementary angle questions.
 
     *:material-clock-outline: Coming soon*
 
--   :material-notebook-edit-outline: **RS Aggarwal High-Yield Practice Problems**
+-   :material-notebook-edit-outline: **High-Yield Practice Problems**
 
     ---
 
-    Exhaustive practice set covering RS Aggarwal Chapter 12 problem types.
+    Exhaustive practice set covering foundational and advanced complementary angle problem types.
 
     *:material-clock-outline: Coming soon*
 
