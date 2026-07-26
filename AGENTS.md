@@ -2,7 +2,6 @@
 
 ## Framework & Technology Stack
 - **Documentation Engine**: [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
-- **Math & Science Visualizations**: [Manim (Mathematical Animation Engine)](https://www.manim.community/) for Python video/GIF rendering.
 - **TeX Math Rendering**: MathJax 3 (configured via `docs/javascripts/mathjax.js` and MathJax CDN).
 - **Styling**: Modern, responsive design system in `docs/stylesheets/extra.css` using CSS custom properties, HSL color tokens, Inter font, Fira Code font, and Material grid cards.
 
@@ -17,10 +16,9 @@
   - `physics/`: Physics hub and topic pages.
   - `stylesheets/extra.css`: Site-wide theme overrides, custom hero styling, card grids, typography, and navigation styles.
   - `javascripts/mathjax.js`: MathJax setup for inline `\(...\)` and block `\[...\]` LaTeX rendering.
-- `animations/`: Python source scripts for Manim animation scenes.
 - `textbooks/`: Reference textbook materials and resources.
 - `mkdocs.yml`: Master configuration file for site metadata, navigation hierarchy (`nav`), theme palette, plugins, and extensions.
-- `requirements.txt`: Python dependencies (`mkdocs`, `mkdocs-material`, `manim`).
+- `requirements.txt`: Python dependencies (`mkdocs`, `mkdocs-material`).
 
 ## Local Build & Preview
 - At the end of every single execution/prompt:
@@ -40,5 +38,5 @@
 - **No Class/Grade/Unit/Chapter Prefixes in UI**: Do NOT display numerical prefixes or labels like "Class 9", "Class 10", "Unit 1", "Chapter 1", or "Ch 1" in page titles, menu navigation, or headings. Keep all displayed titles clean and topic-focused.
 - **Terminology & Page Structure**:
   - **Category Overview Pages**: Use heading `## Chapters` and display interactive visual cards (`<div class="grid cards" markdown>`) instead of plain bullet points.
-  - **Chapter Pages**: Use heading `## Topics` listing the topics/lessons (or placeholders for upcoming Manim animations).
-- **Placeholder Content**: For pages or sections that are not yet populated with Manim animations or full guides, explicitly mention that content is coming soon.
+  - **Chapter Pages**: Use heading `## Topics` listing the topics/lessons.
+- **Placeholder Content**: For pages or sections that are not yet populated with full guides or quizzes, explicitly mention that content is coming soon.
