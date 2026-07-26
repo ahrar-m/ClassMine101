@@ -1,5 +1,5 @@
 site_name: ClassMine 101
-site_description: High School Math & Physics Interactive Learning Hub & Quizzes
+site_description: High School Mathematics Interactive Learning Hub & Quizzes
 site_author: ClassMine 101 Team
 site_url: https://classmine101.com/
 
@@ -67,7 +67,6 @@ extra:
 nav:
   - Home: index.md
   - Mathematics: math/index.md
-  - Physics: physics/index.md
 
 
 

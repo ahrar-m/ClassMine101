@@ -1,15 +1,15 @@
 # ClassMine 101 🎓✨
 
-> High School Mathematics & Physics interactive learning hub, step-by-step problem walkthroughs, visual diagrams, and concept check quizzes.
+> High School Mathematics interactive learning hub, step-by-step problem walkthroughs, visual diagrams, and concept check quizzes.
 
 ---
 
 ## 🌟 Project Overview
 
-**ClassMine 101** is an open-source educational platform created to provide intuitive, visual, and interactive learning for high-school level Mathematics and Physics concepts.
+**ClassMine 101** is an open-source educational platform created to provide intuitive, visual, and interactive learning for high-school level Mathematics concepts (with Physics modules planned for future release).
 
 Key features include:
-- **Visual Problem Solving**: Step-by-step diagrams illustrating physical phenomena and math principles.
+- **Visual Problem Solving**: Step-by-step diagrams illustrating math principles and geometric intuition.
 - **Dedicated Web Portal**: Hosted via **MkDocs (Material Theme)**, featuring crisp LaTeX math formatting.
 - **Interactive Quizzes & Walkthroughs**: Instant self-assessment quizzes after every concept to reinforce understanding.
 
@@ -20,7 +20,7 @@ Key features include:
 ClassMine 101 targets high school students, educators, and self-learners covering topics in:
 
 - 📐 **Mathematics**: *(Topics will be added as content is developed)*
-- ⚡ **Physics**: *(Topics will be added as content is developed)*
+- ⚡ **Physics**: *(Planned for future expansion)*
 
 ---
 

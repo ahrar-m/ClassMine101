@@ -13,7 +13,7 @@
     - `<category_dir>/`: Category folders (`number_systems/`, `algebra/`, `coordinate_geometry/`, `geometry/`, `trigonometry/`, `mensuration/`, `statistics_and_probability/`).
       - `index.md`: Category overview listing chapters.
       - `01_<topic>.md`, `02_<topic>.md`: Sequential chapter pages (ordered numerically on filesystem, clean titles in UI).
-  - `physics/`: Physics hub and topic pages.
+  - `physics/`: Physics hub and topic pages (structure retained for future expansion).
   - `stylesheets/extra.css`: Site-wide theme overrides, custom hero styling, card grids, typography, and navigation styles.
   - `javascripts/mathjax.js`: MathJax setup for inline `\(...\)` and block `\[...\]` LaTeX rendering.
 - `textbooks/`: Reference textbook materials and resources.
