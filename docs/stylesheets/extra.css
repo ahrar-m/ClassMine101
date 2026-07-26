@@ -470,8 +470,158 @@ html {
 .cm-svg-text {
   font-family: var(--md-font-primary);
   font-size: 14px;
-  transition: fill 0.35s ease;
+  transition: fill 0.35s ease, opacity 0.35s ease;
 }
+
+/* Guided Discovery Module Styling */
+.cm-discovery-module {
+  background: var(--md-code-bg-color);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.cm-step-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cm-step-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: var(--md-typeset-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.7;
+  transition: all 0.25s ease;
+}
+
+.cm-step-badge.active {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--cm-primary);
+  color: var(--cm-primary);
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.cm-step-badge.completed {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #10b981;
+  opacity: 1;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: currentColor;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.cm-step-badge.active .step-num {
+  background: var(--cm-primary);
+}
+
+.cm-step-badge.completed .step-num {
+  background: #10b981;
+}
+
+.cm-step-divider {
+  flex: 1;
+  height: 2px;
+  background: rgba(148, 163, 184, 0.25);
+  min-width: 15px;
+}
+
+.cm-discovery-prompt {
+  background: var(--md-bg-color);
+  border-left: 4px solid var(--cm-primary);
+  padding: 1rem 1.25rem;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.highlight-target {
+  color: var(--cm-primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cm-svg-clickable {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cm-svg-clickable:hover {
+  filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.6));
+  stroke-width: 6.5px;
+}
+
+.cm-discovery-feedback {
+  background: var(--md-bg-color);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.cm-discovery-feedback.success-box {
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 4px solid #10b981;
+}
+
+.cm-discovery-feedback.info-box {
+  background: rgba(99, 102, 241, 0.1);
+  border-left: 4px solid var(--cm-primary);
+}
+
+.cm-discovery-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cm-discovery-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.cm-discovery-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 
 
 
