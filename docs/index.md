@@ -2,8 +2,8 @@
   <h1>ClassMine 101</h1>
   <p>Bringing High School Mathematics & Physics to life with visual <strong>Manim</strong> animations, interactive step-by-step problem walkthroughs, and visual video explanations.</p>
   <div class="cm-hero-buttons">
-    <a href="math/index.md" class="cm-btn cm-btn-primary">Explore Mathematics</a>
-    <a href="physics/index.md" class="cm-btn cm-btn-secondary">Explore Physics</a>
+    <a href="math/" class="cm-btn cm-btn-primary">Explore Mathematics</a>
+    <a href="physics/" class="cm-btn cm-btn-secondary">Explore Physics</a>
   </div>
 </div>
 

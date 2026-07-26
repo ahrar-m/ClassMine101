@@ -213,10 +213,54 @@
   margin-right: 0.4rem;
 }
 
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
 /* Admonition info badge */
 .md-typeset .admonition.info {
   border-left-color: var(--cm-secondary);
   border-radius: 8px;
+}
+
+/* Coming Soon Grid & Card Styling */
+.cm-coming-soon-grid > ul > li {
+  border: 1px dashed rgba(156, 163, 175, 0.4) !important;
+  opacity: 0.78;
+  filter: grayscale(20%);
+  transition: all 0.25s ease-in-out;
+}
+
+.cm-coming-soon-grid > ul > li:hover {
+  opacity: 0.98;
+  filter: grayscale(0%);
+  border-color: var(--cm-primary) !important;
+  border-style: solid !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px -4px rgba(99, 102, 241, 0.2);
+}
+
+.cm-badge-coming-soon {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  background-color: rgba(156, 163, 175, 0.15);
+  color: #6b7280;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Footer Copyright & Generator Removal */
+.md-footer-meta__inner .md-copyright,
+.md-copyright,
+.md-footer-copyright {
+  display: none !important;
 }
 
 

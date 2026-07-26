@@ -61,49 +61,12 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+extra:
+  generator: false
+
 nav:
   - Home: index.md
-  - Mathematics:
-      - math/index.md
-      - Number Systems:
-          - math/number_systems/index.md
-          - Number Systems Basics: math/number_systems/01_number_systems.md
-          - Real Numbers: math/number_systems/02_real_numbers.md
-      - Algebra:
-          - math/algebra/index.md
-          - Polynomials: math/algebra/01_polynomials.md
-          - Factorisation of Polynomials: math/algebra/02_factorisation_of_polynomials.md
-          - Linear Equations in Two Variables: math/algebra/03_linear_equations_in_two_variables.md
-          - Quadratic Equations: math/algebra/04_quadratic_equations.md
-          - Arithmetic Progression: math/algebra/05_arithmetic_progression.md
-      - Coordinate Geometry:
-          - math/coordinate_geometry/index.md
-          - Cartesian Coordinates: math/coordinate_geometry/01_coordinate_geometry.md
-      - Geometry:
-          - math/geometry/index.md
-          - Introduction to Euclid's Geometry: math/geometry/01_euclids_geometry.md
-          - Lines and Angles: math/geometry/02_lines_and_angles.md
-          - Triangles & Congruence: math/geometry/03_triangles_and_congruence.md
-          - Quadrilaterals & Parallelograms: math/geometry/04_quadrilaterals_and_parallelograms.md
-          - Circles: math/geometry/05_circles.md
-          - Geometrical Constructions: math/geometry/06_geometrical_constructions.md
-      - Trigonometry:
-          - math/trigonometry/index.md
-          - Trigonometric Ratios & Particular Angles: math/trigonometry/01_trigonometric_ratios.md
-          - Trigonometric Ratios of Complementary Angles: math/trigonometry/02_trigonometric_ratios_of_complementary_angles.md
-          - Trigonometric Identities: math/trigonometry/03_trigonometric_identities.md
-          - Heights and Distances: math/trigonometry/04_heights_and_distances.md
-      - Mensuration:
-          - math/mensuration/index.md
-          - Areas of Triangles & Quadrilaterals: math/mensuration/01_area_of_triangles_and_quadrilaterals.md
-          - Perimeter & Area of Plane Figures: math/mensuration/02_perimeter_and_area_of_plane_figures.md
-          - Area of Circle, Sector and Segment: math/mensuration/03_area_of_circle_sector_and_segment.md
-          - Volume and Surface Area of Solids: math/mensuration/04_volume_and_surface_area_of_solids.md
-      - Statistics & Probability:
-          - math/statistics_and_probability/index.md
-          - Data Presentation & Frequency Graphs: math/statistics_and_probability/01_presentation_of_data_and_frequency_graphs.md
-          - Mean, Median, Mode & Ogive: math/statistics_and_probability/02_mean_median_and_mode.md
-          - Probability: math/statistics_and_probability/03_probability.md
+  - Mathematics: math/index.md
   - Physics: physics/index.md
 
 

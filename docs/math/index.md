@@ -5,9 +5,11 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 !!! info "Interactive Content & Visual Animations"
     Detailed visual Manim animations, interactive simulations, and step-by-step problem walkthroughs for all topics are currently under active development and **coming soon**.
 
-<div class="grid cards" markdown>
+## Coming Soon
 
--   :material-numeric: **[Number Systems](number_systems/index.md)**
+<div class="grid cards cm-coming-soon-grid" markdown>
+
+-   :material-numeric: **[Number Systems](number_systems/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -17,7 +19,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](number_systems/index.md)
 
--   :material-function-variant: **[Algebra](algebra/index.md)**
+-   :material-function-variant: **[Algebra](algebra/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -27,7 +29,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](algebra/index.md)
 
--   :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)**
+-   :material-axis-arrow: **[Coordinate Geometry](coordinate_geometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -37,7 +39,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](coordinate_geometry/index.md)
 
--   :material-shape-polygon-plus: **[Geometry](geometry/index.md)**
+-   :material-shape-polygon-plus: **[Geometry](geometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -47,7 +49,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](geometry/index.md)
 
--   :material-triangle-outline: **[Trigonometry](trigonometry/index.md)**
+-   :material-triangle-outline: **[Trigonometry](trigonometry/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -57,7 +59,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](trigonometry/index.md)
 
--   :material-cube-outline: **[Mensuration](mensuration/index.md)**
+-   :material-cube-outline: **[Mensuration](mensuration/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
@@ -67,7 +69,7 @@ Welcome to the **Mathematics** hub on **ClassMine 101**. Select a category below
 
     [:octicons-arrow-right-24: View Category](mensuration/index.md)
 
--   :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)**
+-   :material-chart-bell-curve-cumulative: **[Statistics and Probability](statistics_and_probability/index.md)** <span class="cm-badge-coming-soon">Coming Soon</span>
 
     ---
 
