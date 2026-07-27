@@ -2,20 +2,21 @@
 
 ## Framework & Technology Stack
 - **Documentation Engine**: [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
-- **TeX Math Rendering**: MathJax 3 (configured via `docs/javascripts/mathjax.js` and MathJax CDN).
-- **Styling**: Modern, responsive design system in `docs/stylesheets/extra.css` using CSS custom properties, HSL color tokens, Inter font, Fira Code font, and Material grid cards.
+- **Native Material Support & Standard Structure**: Always prioritize and strictly use native Material for MkDocs features, extensions, typography (Roboto / Roboto Mono), and configuration options in `mkdocs.yml` (e.g., native theme palette, native button formatting `{ .md-button }`, standard grid cards `<div class="grid cards" markdown>`, native footer/copyright options).
+- **Deviation & Approval Rule**: **DO NOT** introduce custom non-standard CSS hacks, custom font `@import` rules, custom HTML `div` wrappers, or unapproved JavaScript extensions without explicit user approval. If a requested feature cannot be implemented natively and requires custom CSS/JS/HTML deviations, the agent **MUST request and obtain specific approval from the user** before building it.
+- **TeX Math Rendering**: MathJax 3 (configured natively via `docs/javascripts/mathjax.js` and official MathJax 3 CDN).
 
 ## Directory & Architecture Structure
 - `docs/`: Core documentation and website markdown source pages.
-  - `index.md`: Main landing page with hero banner, subject modules grid cards, and overview.
+  - `index.md`: Main landing page using native Material for MkDocs markdown syntax and button components.
   - `math/`: Pure topic-based mathematics content.
     - `index.md`: Mathematics hub overview page featuring interactive category cards.
     - `<category_dir>/`: Category folders (`number_systems/`, `algebra/`, `coordinate_geometry/`, `geometry/`, `trigonometry/`, `mensuration/`, `statistics_and_probability/`).
       - `index.md`: Category overview listing chapters.
       - `01_<topic>.md`, `02_<topic>.md`: Sequential chapter pages (ordered numerically on filesystem, clean titles in UI).
   - `physics/`: Physics hub and topic pages (structure retained for future expansion).
-  - `stylesheets/extra.css`: Site-wide theme overrides, custom hero styling, card grids, typography, and navigation styles.
-  - `javascripts/mathjax.js`: MathJax setup for inline `\(...\)` and block `\[...\]` LaTeX rendering.
+  - `stylesheets/extra.css`: Site-wide custom CSS file. Must be kept clean and minimal; non-standard theme overrides are strictly prohibited unless explicitly approved.
+  - `javascripts/mathjax.js`: Standard MathJax 3 setup for inline `\(...\)` and block `\[...\]` LaTeX rendering.
 - `textbooks/`: Reference textbook materials and resources.
 - `mkdocs.yml`: Master configuration file for site metadata, navigation hierarchy (`nav`), theme palette, plugins, and extensions.
 - `requirements.txt`: Python dependencies (`mkdocs`, `mkdocs-material`).
