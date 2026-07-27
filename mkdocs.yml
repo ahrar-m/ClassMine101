@@ -72,3 +72,7 @@ nav:
       - Trigonometry:
           - Overview: math/trigonometry/index.md
           - Trigonometric Ratios: math/trigonometry/01_trigonometric_ratios.md
+          - Ratios of Specific Angles: math/trigonometry/02_ratios_of_specific_angles.md
+          - Ratios of Complementary Angles: math/trigonometry/03_ratios_of_complementary_angles.md
+          - Trigonometric Identities: math/trigonometry/04_trigonometric_identities.md
+          - Heights and Distances: math/trigonometry/05_heights_and_distances.md
