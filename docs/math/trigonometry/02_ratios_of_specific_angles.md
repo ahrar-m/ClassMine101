@@ -67,14 +67,16 @@ Welcome to the **Trigonometric Ratios of Specific Angles** chapter. In this sect
 Consider an isosceles right-angled triangle \(\Delta ABC\), right-angled at \(B\), where \(AB = BC = a\).
 
 Since \(AB = BC\), the angles opposite to these sides are equal:
-\[
+
+$$
 \angle A = \angle C = 45^\circ
-\]
+$$
 
 By Pythagoras Theorem:
-\[
+
+$$
 AC^2 = AB^2 + BC^2 = a^2 + a^2 = 2a^2 \implies AC = a\sqrt{2}
-\]
+$$
 
 Using angle \(A = 45^\circ\):
 *   \(\sin 45^\circ = \frac{BC}{AC} = \frac{a}{a\sqrt{2}} = \frac{1}{\sqrt{2}}\)
@@ -96,18 +98,19 @@ Draw altitude \(AD \perp BC\). Since \(\Delta ABC\) is equilateral:
 *   \(\angle B = 60^\circ\)
 
 In right \(\Delta ABD\), by Pythagoras Theorem:
-\[
-AD^2 = AB^2 - BD^2 = (2a)^2 - a^2 = 4a^2 - a^2 = 3a^2 \implies AD = a\sqrt{3}
-\]
 
-#### For \(30^\circ\) (Reference angle \(\angle BAD = 30^\circ\)):
+$$
+AD^2 = AB^2 - BD^2 = (2a)^2 - a^2 = 4a^2 - a^2 = 3a^2 \implies AD = a\sqrt{3}
+$$
+
+### For 30 Degrees
 *   Perpendicular = \(BD = a\), Base = \(AD = a\sqrt{3}\), Hypotenuse = \(AB = 2a\)
 *   \(\sin 30^\circ = \frac{a}{2a} = \frac{1}{2}\)
 *   \(\cos 30^\circ = \frac{a\sqrt{3}}{2a} = \frac{\sqrt{3}}{2}\)
 *   \(\tan 30^\circ = \frac{a}{a\sqrt{3}} = \frac{1}{\sqrt{3}}\)
 *   \(\csc 30^\circ = 2\), \(\sec 30^\circ = \frac{2}{\sqrt{3}}\), \(\cot 30^\circ = \sqrt{3}\)
 
-#### For \(60^\circ\) (Reference angle \(\angle B = 60^\circ\)):
+### For 60 Degrees
 *   Perpendicular = \(AD = a\sqrt{3}\), Base = \(BD = a\), Hypotenuse = \(AB = 2a\)
 *   \(\sin 60^\circ = \frac{a\sqrt{3}}{2a} = \frac{\sqrt{3}}{2}\)
 *   \(\cos 60^\circ = \frac{a}{2a} = \frac{1}{2}\)
@@ -129,9 +132,11 @@ AD^2 = AB^2 - BD^2 = (2a)^2 - a^2 = 4a^2 - a^2 = 3a^2 \implies AD = a\sqrt{3}
 
 !!! tip "Memory Pattern Trick"
     Notice that \(\sin \theta\) for \(0^\circ, 30^\circ, 45^\circ, 60^\circ, 90^\circ\) can be remembered as:
-    \[
+
+$$
     \sqrt{\frac{0}{4}}, \quad \sqrt{\frac{1}{4}}, \quad \sqrt{\frac{2}{4}}, \quad \sqrt{\frac{3}{4}}, \quad \sqrt{\frac{4}{4}}
-    \]
+$$
+
     Cosine values are simply the sine values written in reverse order.
 
 ---
@@ -161,12 +166,13 @@ Substituting the standard values from the table:
 *   \(\sin 30^\circ = \frac{1}{2}\)
 *   \(\cos 60^\circ = \frac{1}{2}\)
 
-\[
+$$
 \text{Expression} = \left(\frac{\sqrt{3}}{2}\right) \left(\frac{\sqrt{3}}{2}\right) + \left(\frac{1}{2}\right) \left(\frac{1}{2}\right)
-\]
-\[
+$$
+
+$$
 = \frac{3}{4} + \frac{1}{4} = \frac{4}{4} = 1
-\]
+$$
 
 ---
 
@@ -176,15 +182,18 @@ Evaluate: \(\frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ}\).
 **Solution:**
 
 Substituting \(\tan 30^\circ = \frac{1}{\sqrt{3}}\):
-\[
+
+$$
 \text{Numerator} = 2 \left(\frac{1}{\sqrt{3}}\right) = \frac{2}{\sqrt{3}}
-\]
-\[
+$$
+
+$$
 \text{Denominator} = 1 + \left(\frac{1}{\sqrt{3}}\right)^2 = 1 + \frac{1}{3} = \frac{4}{3}
-\]
-\[
+$$
+
+$$
 \text{Expression} = \frac{\frac{2}{\sqrt{3}}}{\frac{4}{3}} = \frac{2}{\sqrt{3}} \times \frac{3}{4} = \frac{3}{2\sqrt{3}} = \frac{\sqrt{3}}{2}
-\]
+$$
 
 *(Note: \(\frac{\sqrt{3}}{2} = \sin 60^\circ\)).*
 
@@ -196,27 +205,32 @@ If \(\tan(A + B) = \sqrt{3}\) and \(\tan(A - B) = \frac{1}{\sqrt{3}}\), where \(
 **Solution:**
 
 We know that \(\tan 60^\circ = \sqrt{3}\). Therefore:
-\[
+
+$$
 A + B = 60^\circ \quad \text{--- (Equation 1)}
-\]
+$$
 
 We also know that \(\tan 30^\circ = \frac{1}{\sqrt{3}}\). Therefore:
-\[
+
+$$
 A - B = 30^\circ \quad \text{--- (Equation 2)}
-\]
+$$
 
 Adding Equation (1) and Equation (2):
-\[
+
+$$
 (A + B) + (A - B) = 60^\circ + 30^\circ
-\]
-\[
+$$
+
+$$
 2A = 90^\circ \implies A = 45^\circ
-\]
+$$
 
 Substituting \(A = 45^\circ\) into Equation (1):
-\[
+
+$$
 45^\circ + B = 60^\circ \implies B = 15^\circ
-\]
+$$
 
 **Answer:** \(A = 45^\circ\), \(B = 15^\circ\).
 
@@ -228,20 +242,24 @@ In \(\Delta ABC\), right-angled at \(B\), \(AB = 5\text{ cm}\) and \(\angle ACB 
 **Solution:**
 
 To find \(BC\) (Base) given \(AB = 5\text{ cm}\) (Perpendicular):
-\[
+
+$$
 \tan 30^\circ = \frac{AB}{BC}
-\]
-\[
+$$
+
+$$
 \frac{1}{\sqrt{3}} = \frac{5}{BC} \implies BC = 5\sqrt{3}\text{ cm}
-\]
+$$
 
 To find \(AC\) (Hypotenuse):
-\[
+
+$$
 \sin 30^\circ = \frac{AB}{AC}
-\]
-\[
+$$
+
+$$
 \frac{1}{2} = \frac{5}{AC} \implies AC = 10\text{ cm}
-\]
+$$
 
 **Answer:** \(BC = 5\sqrt{3}\text{ cm}\), \(AC = 10\text{ cm}\).
 

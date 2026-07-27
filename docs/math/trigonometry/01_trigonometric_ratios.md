@@ -93,29 +93,29 @@ In relation to angle \(\theta\):
 
 For an acute angle \(\theta\) in a right-angled triangle \(\Delta ABC\) right-angled at \(B\), the six trigonometric ratios (T-ratios) are defined as follows:
 
-\[
+$$
 \sin \theta = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{P}{H} = \frac{BC}{AC}
-\]
+$$
 
-\[
+$$
 \cos \theta = \frac{\text{Base}}{\text{Hypotenuse}} = \frac{B}{H} = \frac{AB}{AC}
-\]
+$$
 
-\[
+$$
 \tan \theta = \frac{\text{Perpendicular}}{\text{Base}} = \frac{P}{B} = \frac{BC}{AB}
-\]
+$$
 
-\[
+$$
 \csc \theta = \frac{\text{Hypotenuse}}{\text{Perpendicular}} = \frac{H}{P} = \frac{AC}{BC}
-\]
+$$
 
-\[
+$$
 \sec \theta = \frac{\text{Hypotenuse}}{\text{Base}} = \frac{H}{B} = \frac{AC}{AB}
-\]
+$$
 
-\[
+$$
 \cot \theta = \frac{\text{Base}}{\text{Perpendicular}} = \frac{B}{P} = \frac{AB}{BC}
-\]
+$$
 
 ---
 
@@ -133,13 +133,13 @@ From the definitions above, the following reciprocal identities hold for any acu
 
 The tangent and cotangent ratios can be expressed as quotients of sine and cosine:
 
-\[
+$$
 \tan \theta = \frac{\frac{P}{H}}{\frac{B}{H}} = \frac{\sin \theta}{\cos \theta}
-\]
+$$
 
-\[
+$$
 \cot \theta = \frac{\frac{B}{H}}{\frac{P}{H}} = \frac{\cos \theta}{\sin \theta}
-\]
+$$
 
 ---
 
@@ -160,9 +160,9 @@ By AA Similarity Criterion, \(\Delta AMP \sim \Delta AM'P'\).
 
 Therefore, the corresponding sides are proportional:
 
-\[
+$$
 \frac{PM}{P'M'} = \frac{AP}{AP'} = \frac{AM}{AM'} \implies \frac{PM}{AP} = \frac{P'M'}{AP'}
-\]
+$$
 
 This shows that \(\sin \theta = \frac{\text{Perpendicular}}{\text{Hypotenuse}}\) remains identical regardless of whether it is calculated using \(\Delta AMP\) or \(\Delta AM'P'\). Similar equal ratios hold for all six trigonometric functions.
 
@@ -178,19 +178,22 @@ Given \(\tan A = \frac{4}{3}\), find the remaining trigonometric ratios of angle
 Let \(\Delta ABC\) be a right triangle, right-angled at \(B\), with reference angle \(A\).
 
 We are given:
-\[
+
+$$
 \tan A = \frac{\text{Perpendicular}}{\text{Base}} = \frac{BC}{AB} = \frac{4}{3}
-\]
+$$
 
 Let \(BC = 4k\) and \(AB = 3k\), where \(k > 0\) is a constant multiplier.
 
 By Pythagoras Theorem in right \(\Delta ABC\):
-\[
+
+$$
 AC^2 = AB^2 + BC^2 = (3k)^2 + (4k)^2 = 9k^2 + 16k^2 = 25k^2
-\]
-\[
+$$
+
+$$
 AC = \sqrt{25k^2} = 5k
-\]
+$$
 
 Now, substituting values for Perpendicular (\(P = 4k\)), Base (\(B = 3k\)), and Hypotenuse (\(H = 5k\)):
 
@@ -210,18 +213,22 @@ In \(\Delta PQR\), right-angled at \(Q\), \(PR + QR = 25\text{ cm}\) and \(PQ = 
 Let \(QR = x\text{ cm}\). Then \(PR = (25 - x)\text{ cm}\).
 
 Applying Pythagoras Theorem to right-angled \(\Delta PQR\):
-\[
+
+$$
 PR^2 = PQ^2 + QR^2
-\]
-\[
+$$
+
+$$
 (25 - x)^2 = 5^2 + x^2
-\]
-\[
+$$
+
+$$
 625 - 50x + x^2 = 25 + x^2
-\]
-\[
+$$
+
+$$
 625 - 25 = 50x \implies 50x = 600 \implies x = 12
-\]
+$$
 
 Thus:
 *   \(QR = 12\text{ cm}\) (Perpendicular relative to \(\angle P\))
@@ -229,15 +236,18 @@ Thus:
 *   \(PQ = 5\text{ cm}\) (Base relative to \(\angle P\))
 
 Calculating the required ratios:
-\[
+
+$$
 \sin P = \frac{QR}{PR} = \frac{12}{13}
-\]
-\[
+$$
+
+$$
 \cos P = \frac{PQ}{PR} = \frac{5}{13}
-\]
-\[
+$$
+
+$$
 \tan P = \frac{QR}{PQ} = \frac{12}{5}
-\]
+$$
 
 ---
 
@@ -251,24 +261,28 @@ We have \(3 \cot A = 4 \implies \cot A = \frac{4}{3}\).
 Therefore, \(\tan A = \frac{1}{\cot A} = \frac{3}{4}\).
 
 In a right triangle with Base = \(4k\) and Perpendicular = \(3k\):
-\[
+
+$$
 \text{Hypotenuse} = \sqrt{(4k)^2 + (3k)^2} = \sqrt{16k^2 + 9k^2} = 5k
-\]
+$$
 
 Hence:
-\[
+
+$$
 \cos A = \frac{4}{5}, \quad \sin A = \frac{3}{5}
-\]
+$$
 
 Now evaluate Left-Hand Side (LHS):
-\[
+
+$$
 \text{LHS} = \frac{1 - \left(\frac{3}{4}\right)^2}{1 + \left(\frac{3}{4}\right)^2} = \frac{1 - \frac{9}{16}}{1 + \frac{9}{16}} = \frac{\frac{7}{16}}{\frac{25}{16}} = \frac{7}{25}
-\]
+$$
 
 Now evaluate Right-Hand Side (RHS):
-\[
+
+$$
 \text{RHS} = \cos^2 A - \sin^2 A = \left(\frac{4}{5}\right)^2 - \left(\frac{3}{5}\right)^2 = \frac{16}{25} - \frac{9}{25} = \frac{7}{25}
-\]
+$$
 
 Since \(\text{LHS} = \text{RHS} = \frac{7}{25}\), the equality holds true.
 

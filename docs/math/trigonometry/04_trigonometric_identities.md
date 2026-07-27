@@ -86,62 +86,75 @@ Consider right-angled triangle \(\Delta ABC\), right-angled at \(B\), with refer
 ```
 
 By Pythagoras Theorem:
-\[
+
+$$
 AB^2 + BC^2 = AC^2 \quad \text{--- (Equation 1)}
-\]
+$$
 
 ---
 
-### Identity 1: \(\sin^2 \theta + \cos^2 \theta = 1\)
+### Identity 1: Sine and Cosine Pythagorean Identity
 
 Divide each term in Equation (1) by \(AC^2\):
-\[
+
+$$
 \frac{AB^2}{AC^2} + \frac{BC^2}{AC^2} = \frac{AC^2}{AC^2}
-\]
-\[
+$$
+
+$$
 \left(\frac{AB}{AC}\right)^2 + \left(\frac{BC}{AC}\right)^2 = 1
-\]
+$$
 
 Since \(\frac{AB}{AC} = \cos \theta\) and \(\frac{BC}{AC} = \sin \theta\):
-\[
+
+$$
 \cos^2 \theta + \sin^2 \theta = 1 \iff \sin^2 \theta + \cos^2 \theta = 1
-\]
+$$
+
 *(Valid for all \(0^\circ \le \theta \le 90^\circ\)).*
 
 ---
 
-### Identity 2: \(1 + \tan^2 \theta = \sec^2 \theta\)
+### Identity 2: Secant and Tangent Pythagorean Identity
 
 Divide each term in Equation (1) by \(AB^2\):
-\[
+
+$$
 \frac{AB^2}{AB^2} + \frac{BC^2}{AB^2} = \frac{AC^2}{AB^2}
-\]
-\[
+$$
+
+$$
 1 + \left(\frac{BC}{AB}\right)^2 = \left(\frac{AC}{AB}\right)^2
-\]
+$$
 
 Since \(\frac{BC}{AB} = \tan \theta\) and \(\frac{AC}{AB} = \sec \theta\):
-\[
+
+$$
 1 + \tan^2 \theta = \sec^2 \theta
-\]
+$$
+
 *(Valid for all \(0^\circ \le \theta < 90^\circ\)).*
 
 ---
 
-### Identity 3: \(1 + \cot^2 \theta = \csc^2 \theta\)
+### Identity 3: Cosecant and Cotangent Pythagorean Identity
 
 Divide each term in Equation (1) by \(BC^2\):
-\[
+
+$$
 \frac{AB^2}{BC^2} + \frac{BC^2}{BC^2} = \frac{AC^2}{BC^2}
-\]
-\[
+$$
+
+$$
 \left(\frac{AB}{BC}\right)^2 + 1 = \left(\frac{AC}{BC}\right)^2
-\]
+$$
 
 Since \(\frac{AB}{BC} = \cot \theta\) and \(\frac{AC}{BC} = \csc \theta\):
-\[
+
+$$
 1 + \cot^2 \theta = \csc^2 \theta
-\]
+$$
+
 *(Valid for all \(0^\circ < \theta \le 90^\circ\)).*
 
 ---
@@ -150,15 +163,15 @@ Since \(\frac{AB}{BC} = \cot \theta\) and \(\frac{AC}{BC} = \csc \theta\):
 
 In mathematical proofs, we frequently rewrite the three fundamental identities into these useful variations:
 
-### From \(\sin^2 \theta + \cos^2 \theta = 1\):
+### From Sine-Cosine Identity
 *   \(\sin^2 \theta = 1 - \cos^2 \theta \iff \sin \theta = \sqrt{1 - \cos^2 \theta}\)
 *   \(\cos^2 \theta = 1 - \sin^2 \theta \iff \cos \theta = \sqrt{1 - \sin^2 \theta}\)
 
-### From \(1 + \tan^2 \theta = \sec^2 \theta\):
+### From Tangent-Secant Identity
 *   \(\sec^2 \theta - \tan^2 \theta = 1\)
 *   \(\tan^2 \theta = \sec^2 \theta - 1 \iff \tan \theta = \sqrt{\sec^2 \theta - 1}\)
 
-### From \(1 + \cot^2 \theta = \csc^2 \theta\):
+### From Cotangent-Cosecant Identity
 *   \(\csc^2 \theta - \cot^2 \theta = 1\)
 *   \(\cot^2 \theta = \csc^2 \theta - 1 \iff \cot \theta = \sqrt{\csc^2 \theta - 1}\)
 
@@ -188,21 +201,24 @@ Express \(\cos A, \tan A\), and \(\sec A\) in terms of \(\sin A\).
 
 1.  **For \(\cos A\)**:
     Using \(\sin^2 A + \cos^2 A = 1 \implies \cos^2 A = 1 - \sin^2 A\):
-    \[
+
+$$
     \cos A = \sqrt{1 - \sin^2 A}
-    \]
+$$
 
 2.  **For \(\tan A\)**:
     Using quotient relation \(\tan A = \frac{\sin A}{\cos A}\):
-    \[
+
+$$
     \tan A = \frac{\sin A}{\sqrt{1 - \sin^2 A}}
-    \]
+$$
 
 3.  **For \(\sec A\)**:
     Using reciprocal relation \(\sec A = \frac{1}{\cos A}\):
-    \[
+
+$$
     \sec A = \frac{1}{\sqrt{1 - \sin^2 A}}
-    \]
+$$
 
 ---
 
@@ -212,24 +228,28 @@ Prove that: \(\frac{\sin \theta - 2\sin^3 \theta}{2\cos^3 \theta - \cos \theta} 
 **Solution:**
 
 Start from Left-Hand Side (LHS):
-\[
+
+$$
 \text{LHS} = \frac{\sin \theta (1 - 2\sin^2 \theta)}{\cos \theta (2\cos^2 \theta - 1)}
-\]
+$$
 
 Using identity \(\sin^2 \theta = 1 - \cos^2 \theta\) in the numerator:
-\[
+
+$$
 1 - 2\sin^2 \theta = 1 - 2(1 - \cos^2 \theta) = 1 - 2 + 2\cos^2 \theta = 2\cos^2 \theta - 1
-\]
+$$
 
 Substitute back into LHS:
-\[
+
+$$
 \text{LHS} = \frac{\sin \theta (2\cos^2 \theta - 1)}{\cos \theta (2\cos^2 \theta - 1)}
-\]
+$$
 
 Cancel out the common factor \((2\cos^2 \theta - 1)\):
-\[
+
+$$
 \text{LHS} = \frac{\sin \theta}{\cos \theta} = \tan \theta = \text{RHS}
-\]
+$$
 
 Hence proved.
 
@@ -241,24 +261,28 @@ Prove that: \(\sqrt{\frac{1 + \sin A}{1 - \sin A}} = \sec A + \tan A\).
 **Solution:**
 
 Start from Left-Hand Side (LHS):
-\[
+
+$$
 \text{LHS} = \sqrt{\frac{1 + \sin A}{1 - \sin A}}
-\]
+$$
 
 Multiply numerator and denominator inside the square root by \((1 + \sin A)\):
-\[
+
+$$
 \text{LHS} = \sqrt{\frac{(1 + \sin A)(1 + \sin A)}{(1 - \sin A)(1 + \sin A)}} = \sqrt{\frac{(1 + \sin A)^2}{1 - \sin^2 A}}
-\]
+$$
 
 Since \(1 - \sin^2 A = \cos^2 A\):
-\[
+
+$$
 \text{LHS} = \sqrt{\frac{(1 + \sin A)^2}{\cos^2 A}} = \frac{1 + \sin A}{\cos A}
-\]
+$$
 
 Split the fraction:
-\[
+
+$$
 \text{LHS} = \frac{1}{\cos A} + \frac{\sin A}{\cos A} = \sec A + \tan A = \text{RHS}
-\]
+$$
 
 Hence proved.
 
@@ -270,30 +294,34 @@ Prove that: \((\sin A + \csc A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 
 **Solution:**
 
 Expand LHS using \((a + b)^2 = a^2 + 2ab + b^2\):
-\[
+
+$$
 \text{LHS} = (\sin^2 A + 2\sin A \csc A + \csc^2 A) + (\cos^2 A + 2\cos A \sec A + \sec^2 A)
-\]
+$$
 
 Use reciprocal relations \(\sin A \csc A = 1\) and \(\cos A \sec A = 1\):
-\[
+
+$$
 \text{LHS} = \sin^2 A + 2(1) + \csc^2 A + \cos^2 A + 2(1) + \sec^2 A
-\]
-\[
+$$
+
+$$
 = (\sin^2 A + \cos^2 A) + 4 + \csc^2 A + \sec^2 A
-\]
+$$
 
 Substitute \(\sin^2 A + \cos^2 A = 1\):
-\[
+
+$$
 \text{LHS} = 1 + 4 + \csc^2 A + \sec^2 A = 5 + \csc^2 A + \sec^2 A
-\]
+$$
 
 Now convert \(\csc^2 A\) and \(\sec^2 A\) using fundamental identities:
 *   \(\csc^2 A = 1 + \cot^2 A\)
 *   \(\sec^2 A = 1 + \tan^2 A\)
 
-\[
+$$
 \text{LHS} = 5 + (1 + \cot^2 A) + (1 + \tan^2 A) = 7 + \tan^2 A + \cot^2 A = \text{RHS}
-\]
+$$
 
 Hence proved.
 

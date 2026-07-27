@@ -86,9 +86,9 @@ Eye O  /_____| Horizontal Line OX
 
 If the target object \(P\) is **above** the horizontal level of the observer's eye, the angle between the horizontal line \(OX\) and the line of sight \(OP\) is called the **Angle of Elevation**.
 
-\[
+$$
 \angle XOP = \theta \quad (\text{Angle of Elevation})
-\]
+$$
 
 !!! note "Key Observation"
     To measure an angle of elevation, the observer must raise their eyes upward from the horizontal level line.
@@ -108,16 +108,18 @@ Sight    \|
           P (Object on Ground/Sea)
 ```
 
-\[
+$$
 \angle XOP = \theta \quad (\text{Angle of Depression})
-\]
+$$
 
 !!! tip "Equivalence Theorem"
     Since the horizontal line drawn at eye level is parallel to the ground surface:
     
-    \[
+
+$$
     \text{Angle of Depression of } P \text{ from } O = \text{Angle of Elevation of } O \text{ from } P
-    \]
+$$
+
     *(By alternate interior angles formed by parallel horizontal lines).*
 
 ---
@@ -148,17 +150,20 @@ Let \(AB\) represent the height of the tower (\(h\text{ meters}\)), and let \(C\
 Given: \(\angle ACB = 60^\circ\).
 
 In right \(\Delta ABC\):
-\[
+
+$$
 \tan 60^\circ = \frac{\text{Perpendicular}}{\text{Base}} = \frac{AB}{BC}
-\]
-\[
+$$
+
+$$
 \sqrt{3} = \frac{h}{15} \implies h = 15\sqrt{3}\text{ m}
-\]
+$$
 
 Taking \(\sqrt{3} \approx 1.732\):
-\[
+
+$$
 h = 15 \times 1.732 = 25.98\text{ m}
-\]
+$$
 
 **Answer:** Height of the tower is \(15\sqrt{3}\text{ m}\) (or \(25.98\text{ m}\)).
 
@@ -180,19 +185,22 @@ Therefore:
 In right \(\Delta CBD\):
 
 1.  **To find \(BC\)**:
-    \[
+
+$$
     \tan 30^\circ = \frac{BC}{BD} \implies \frac{1}{\sqrt{3}} = \frac{BC}{8} \implies BC = \frac{8}{\sqrt{3}}\text{ m}
-    \]
+$$
 
 2.  **To find \(CD\)**:
-    \[
+
+$$
     \cos 30^\circ = \frac{BD}{CD} \implies \frac{\sqrt{3}}{2} = \frac{8}{CD} \implies CD = \frac{16}{\sqrt{3}}\text{ m}
-    \]
+$$
 
 3.  **Total height of the tree**:
-    \[
+
+$$
     \text{Height} = BC + CD = \frac{8}{\sqrt{3}} + \frac{16}{\sqrt{3}} = \frac{24}{\sqrt{3}} = \frac{24\sqrt{3}}{3} = 8\sqrt{3}\text{ m}
-    \]
+$$
 
 **Answer:** Total height of the tree is \(8\sqrt{3}\text{ m}\).
 
@@ -212,27 +220,32 @@ Angles of depression:
 Let \(BC = x\text{ m}\) and distance between ships \(CD = y\text{ m}\), so \(BD = x + y\text{ m}\).
 
 1.  In right \(\Delta ABC\):
-    \[
+
+$$
     \tan 45^\circ = \frac{AB}{BC} \implies 1 = \frac{75}{x} \implies x = 75\text{ m}
-    \]
+$$
 
 2.  In right \(\Delta ABD\):
-    \[
+
+$$
     \tan 30^\circ = \frac{AB}{BD} \implies \frac{1}{\sqrt{3}} = \frac{75}{x + y}
-    \]
-    \[
+$$
+
+$$
     x + y = 75\sqrt{3}
-    \]
+$$
 
 3.  Substitute \(x = 75\):
-    \[
+
+$$
     75 + y = 75\sqrt{3} \implies y = 75\sqrt{3} - 75 = 75(\sqrt{3} - 1)\text{ m}
-    \]
+$$
 
 Taking \(\sqrt{3} \approx 1.732\):
-\[
+
+$$
 y = 75(1.732 - 1) = 75 \times 0.732 = 54.9\text{ m}
-\]
+$$
 
 **Answer:** The distance between the two ships is \(75(\sqrt{3} - 1)\text{ m}\) (or \(54.9\text{ m}\)).
 

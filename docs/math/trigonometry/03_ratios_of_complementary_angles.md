@@ -57,12 +57,14 @@ Welcome to the **Trigonometric Ratios of Complementary Angles** chapter. In geom
 Two angles are said to be **complementary** if their sum is \(90^\circ\).
 
 In a right-angled triangle \(\Delta ABC\), right-angled at \(B\):
-\[
+
+$$
 \angle A + \angle B + \angle C = 180^\circ
-\]
-\[
+$$
+
+$$
 \angle A + 90^\circ + \angle C = 180^\circ \implies \angle A + \angle C = 90^\circ
-\]
+$$
 
 If we denote acute angle \(\angle A = \theta\), then acute angle \(\angle C = 90^\circ - \theta\). Therefore, angles \(\angle A\) and \(\angle C\) form a pair of complementary angles.
 
@@ -83,7 +85,7 @@ Consider right-angled triangle \(\Delta ABC\), right-angled at \(B\). Let \(\ang
         B    (Base)   A (θ)
 ```
 
-### Ratios with respect to angle \(A = \theta\):
+### Ratios for Reference Angle θ
 *   \(\sin \theta = \frac{BC}{AC}\)
 *   \(\cos \theta = \frac{AB}{AC}\)
 *   \(\tan \theta = \frac{BC}{AB}\)
@@ -91,7 +93,7 @@ Consider right-angled triangle \(\Delta ABC\), right-angled at \(B\). Let \(\ang
 *   \(\sec \theta = \frac{AC}{AB}\)
 *   \(\cot \theta = \frac{AB}{BC}\)
 
-### Ratios with respect to angle \(C = (90^\circ - \theta)\):
+### Ratios for Complementary Angle (90° - θ)
 For angle \(C\), the Perpendicular is \(AB\), the Base is \(BC\), and the Hypotenuse is \(AC\):
 *   \(\sin (90^\circ - \theta) = \frac{AB}{AC}\)
 *   \(\cos (90^\circ - \theta) = \frac{BC}{AC}\)
@@ -101,15 +103,18 @@ For angle \(C\), the Perpendicular is \(AB\), the Base is \(BC\), and the Hypote
 *   \(\cot (90^\circ - \theta) = \frac{BC}{AB}\)
 
 Comparing the two sets of equations:
-\[
+
+$$
 \sin (90^\circ - \theta) = \cos \theta
-\]
-\[
+$$
+
+$$
 \cos (90^\circ - \theta) = \sin \theta
-\]
-\[
+$$
+
+$$
 \tan (90^\circ - \theta) = \cot \theta
-\]
+$$
 
 ---
 
@@ -136,14 +141,16 @@ Evaluate: \(\frac{\sin 18^\circ}{\cos 72^\circ}\).
 Notice that \(18^\circ + 72^\circ = 90^\circ\), so \(18^\circ\) and \(72^\circ\) are complementary angles.
 
 We can express \(\sin 18^\circ\) as:
-\[
+
+$$
 \sin 18^\circ = \sin (90^\circ - 72^\circ) = \cos 72^\circ
-\]
+$$
 
 Substituting into the given fraction:
-\[
+
+$$
 \frac{\sin 18^\circ}{\cos 72^\circ} = \frac{\cos 72^\circ}{\cos 72^\circ} = 1
-\]
+$$
 
 ---
 
@@ -157,20 +164,24 @@ Group complementary angle pairs together:
 *   \(23^\circ + 67^\circ = 90^\circ \implies \tan 67^\circ = \tan (90^\circ - 23^\circ) = \cot 23^\circ\)
 
 Now rewrite LHS:
-\[
+
+$$
 \text{LHS} = \tan 48^\circ \cdot \tan 23^\circ \cdot \tan 42^\circ \cdot \tan 67^\circ
-\]
-\[
+$$
+
+$$
 = \tan 48^\circ \cdot \tan 23^\circ \cdot \cot 48^\circ \cdot \cot 23^\circ
-\]
-\[
+$$
+
+$$
 = (\tan 48^\circ \cot 48^\circ) \cdot (\tan 23^\circ \cot 23^\circ)
-\]
+$$
 
 Using the reciprocal relation \(\tan \theta \cot \theta = 1\):
-\[
+
+$$
 \text{LHS} = (1) \cdot (1) = 1 = \text{RHS}
-\]
+$$
 
 ---
 
@@ -180,25 +191,30 @@ If \(\sin 3A = \cos(A - 26^\circ)\), where \(3A\) is an acute angle, find the va
 **Solution:**
 
 Using complementary identity \(\sin \theta = \cos (90^\circ - \theta)\):
-\[
+
+$$
 \sin 3A = \cos (90^\circ - 3A)
-\]
+$$
 
 Equating this to the given RHS:
-\[
+
+$$
 \cos (90^\circ - 3A) = \cos (A - 26^\circ)
-\]
+$$
 
 Since both angles are acute, their measures must be equal:
-\[
+
+$$
 90^\circ - 3A = A - 26^\circ
-\]
-\[
+$$
+
+$$
 90^\circ + 26^\circ = A + 3A
-\]
-\[
+$$
+
+$$
 116^\circ = 4A \implies A = \frac{116^\circ}{4} = 29^\circ
-\]
+$$
 
 **Answer:** \(A = 29^\circ\).
 
@@ -210,17 +226,20 @@ Express \(\cot 85^\circ + \cos 75^\circ\) in terms of trigonometric ratios of an
 **Solution:**
 
 Apply complementary transformations to both terms:
-\[
+
+$$
 \cot 85^\circ = \cot (90^\circ - 5^\circ) = \tan 5^\circ
-\]
-\[
+$$
+
+$$
 \cos 75^\circ = \cos (90^\circ - 15^\circ) = \sin 15^\circ
-\]
+$$
 
 Therefore:
-\[
+
+$$
 \cot 85^\circ + \cos 75^\circ = \tan 5^\circ + \sin 15^\circ
-\]
+$$
 
 Since \(5^\circ\) and \(15^\circ\) lie between \(0^\circ\) and \(45^\circ\), the expression is in the required form.
 
