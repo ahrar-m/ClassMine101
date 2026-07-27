@@ -1,10 +1,10 @@
-<div class="cm-hero">
-  <h1>ClassMine 101</h1>
-  <p>Interactive High School Mathematics learning platform with step-by-step problem walkthroughs, visual diagrams, and concept quizzes.</p>
-  <div class="cm-hero-buttons">
-    <a href="math/" class="cm-btn cm-btn-primary">Explore Mathematics</a>
-  </div>
-</div>
+# ClassMine 101
+
+Interactive High School Mathematics learning platform with step-by-step problem walkthroughs, visual diagrams, and concept quizzes.
+
+[Explore Mathematics :octicons-arrow-right-24:](math/index.md){ .md-button .md-button--primary }
+
+---
 
 ## Subject Modules
 
@@ -20,9 +20,8 @@
 
 </div>
 
-<div class="cm-about-section">
-  <h2>Why ClassMine 101?</h2>
-  <p class="cm-about-text">
-    Learning mathematics shouldn't be about just memorizing formulas. ClassMine 101 brings key concepts to life step-by-step using clear visual diagrams, geometric intuition, interactive walkthroughs, and immediate practice quizzes.
-  </p>
-</div>
+---
+
+## Why ClassMine 101?
+
+Learning mathematics shouldn't be about just memorizing formulas. ClassMine 101 brings key concepts to life step-by-step using clear visual diagrams, geometric intuition, interactive walkthroughs, and immediate practice quizzes.
