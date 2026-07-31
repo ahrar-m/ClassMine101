@@ -1,74 +1,132 @@
-site_name: ClassMine 101
-site_description: High School Mathematics Interactive Learning Hub & Quizzes
-site_author: ClassMine 101 Team
-site_url: https://classmine101.com/
+site_name: Material for MkDocs - Ultimate Visual Showcase
+site_description: A comprehensive, interactive visual showcase of every feature, plugin, and markdown extension available in Material for MkDocs.
+site_author: Antigravity AI
+site_url: https://example.com/mkdocs-material-showcase/
 
-repo_url: https://github.com/ahrar-m/ClassMine101
-repo_name: ahrar-m/ClassMine101
+repo_name: ClassMine101/mkdocs-showcase
+repo_url: https://github.com/example/mkdocs-showcase
 
 theme:
   name: material
+  language: en
   palette:
-    # Scheme toggle for dark/light mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: cyan
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: cyan
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Inter
+    code: Roboto Mono
+
+  icon:
+    logo: material/cube-outline
+    repo: fontawesome/brands/github
+
   features:
+    - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
+    - navigation.path
     - navigation.indexes
     - navigation.top
-    - navigation.tracking
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+      name: PyPI - MkDocs Material
+    - icon: material/book-open-page-variant
+      link: https://squidfunk.github.io/mkdocs-material/
+      name: Official Docs
+
+extra_css:
+  - extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - meta
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+  # PyMdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
-  - md_in_html
-  - admonition
-
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-copyright: ""
-
-extra:
-  generator: false
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
   - Home: index.md
-  - Mathematics:
-      - Overview: math/index.md
-      - Trigonometry:
-          - Overview: math/trigonometry/index.md
-          - Trigonometric Ratios: math/trigonometry/01_trigonometric_ratios.md
+  - Feature Showcase:
+      - Overview: showcase/index.md
+      - UI Elements & Cards: showcase/ui-elements.md
+      - Code & Math: showcase/code-and-math.md
+      - Diagrams & Media: showcase/diagrams-and-media.md
+      - Markdown Extensions: showcase/markdown-extensions.md
+      - Theme & Plugins: showcase/theme-and-plugins.md
